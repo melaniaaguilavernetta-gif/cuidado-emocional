@@ -123,8 +123,8 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-900 mb-1">Email</div>
-                    <a href="mailto:contacto@cuidadoemocional.com" className="text-emerald-600 hover:underline">
-                      contacto@cuidadoemocional.com
+                    <a href="mailto:hola@cuidadoemocional.com" className="text-emerald-600 hover:underline">
+                      hola@cuidadoemocional.com
                     </a>
                   </div>
                 </div>
@@ -135,8 +135,8 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-gray-900 mb-1">Teléfono</div>
-                    <a href="tel:+34900123456" className="text-emerald-600 hover:underline">
-                      +34 900 123 456
+                    <a href="tel:+34696682277" className="text-emerald-600 hover:underline">
+                      +34 696 68 22 77
                     </a>
                   </div>
                 </div>
@@ -148,8 +148,8 @@ export function Contact() {
                   <div>
                     <div className="text-gray-900 mb-1">Ubicación</div>
                     <p className="text-gray-600">
-                      Calle de la Esperanza, 25<br />
-                      28001 Madrid, España
+                      <br />
+                      Girona, España
                     </p>
                   </div>
                 </div>
