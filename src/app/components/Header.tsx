@@ -36,7 +36,7 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {['Inicio', 'Sobre mí', 'Servicios', 'Beneficios', 'Contacto'].map((item) => (
+            {['Inicio', 'Sobre mí', 'Servicios', 'Contacto'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
@@ -65,7 +65,7 @@ export function Header() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <nav className="md:hidden pb-4 space-y-2">
-            {['Inicio', 'Sobre mí', 'Servicios', 'Beneficios', 'Contacto'].map((item) => (
+            {['Inicio', 'Sobre mí', 'Servicios', 'Contacto'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase().replace(' ', '-'))}
