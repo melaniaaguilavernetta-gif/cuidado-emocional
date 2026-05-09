@@ -40,9 +40,8 @@ export function Footer() {
             <h4 className="text-lg mb-4">Navegación</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#inicio" className="hover:text-white transition-colors">Inicio</a></li>
-              <li><a href="#sobre-nosotros" className="hover:text-white transition-colors">Sobre nosotros</a></li>
+              <li><a href="#sobre-nosotros" className="hover:text-white transition-colors">Sobre mí</a></li>
               <li><a href="#servicios" className="hover:text-white transition-colors">Servicios</a></li>
-              <li><a href="#testimonios" className="hover:text-white transition-colors">Testimonios</a></li>
               <li><a href="#contacto" className="hover:text-white transition-colors">Contacto</a></li>
             </ul>
           </div>
