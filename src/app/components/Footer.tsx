@@ -18,26 +18,25 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/profile.php?id=61589322338702" target="_blank" 
-  rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+                rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="https://www.instagram.com/emocionalcuidado/" target="_blank" 
-  rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
+                rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="https://www.linkedin.com/in/cuidado-emocional-7a6a66409/" target="_blank" 
-  rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+                rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="https://x.com/cuidaemocion" target="_blank" 
-  rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-500 transition-colors">
+                rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-500 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>
 
-          
-     <div>
+          <div>
             <h4 className="text-lg mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="/politica-privacidad.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Política de privacidad</a></li>
@@ -46,6 +45,7 @@ export function Footer() {
               <li><a href="/preguntas-frecuentes.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Preguntas frecuentes</a></li>
             </ul>
           </div>
+        </div> {/* <--- ESTE DIV ES EL QUE FALTABA */}
 
         <div className="border-t border-emerald-700 mt-8 pt-8 text-center text-emerald-100">
           <p>&copy; 2026 Cuidado Emocional. Todos los derechos reservados.</p>
