@@ -40,7 +40,7 @@ export function Footer() {
               <li><a href="/politica-privacidad.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Política de privacidad</a></li>
               <li><a href="/terminos-condiciones.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Términos y condiciones</a></li>
               <li><a href="/codigo-etico.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Código ético</a></li>
-              <li><a href="/preguntas-frecuentes.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Preguntas frecuentes</a></li>
+              <li><a href="/faq" className="hover:text-white transition-colors">Preguntas frecuentes</a></li>
             </ul>
           </div>
         </div>
