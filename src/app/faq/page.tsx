@@ -25,24 +25,36 @@ export default function FAQPage() {
   ];
 
   return (
-    <div className="bg-white min-h-screen pt-32 pb-20">
-      <div className="max-w-3xl mx-auto px-4">
-        <h1 className="text-4xl font-light text-gray-900 mb-12 text-center">Preguntas Frecuentes</h1>
-        <div className="space-y-8">
+    // Hemos añadido un fondo gris muy claro y mucho más margen superior (pt-40)
+    <main className="bg-gray-50 min-h-screen pt-40 pb-20">
+      <div className="max-w-3xl mx-auto px-6">
+        <h1 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+          Preguntas Frecuentes
+        </h1>
+        
+        <div className="space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-100 pb-8">
-              <h3 className="text-xl font-medium text-emerald-800 mb-3">{faq.q}</h3>
-              <p className="text-gray-600 leading-relaxed">{faq.a}</p>
+            <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+              <h3 className="text-xl font-semibold text-emerald-800 mb-3">
+                {faq.q}
+              </h3>
+              <p className="text-gray-700 leading-relaxed">
+                {faq.a}
+              </p>
             </div>
           ))}
         </div>
+
         <div className="mt-16 text-center">
-          <p className="text-gray-500 mb-6">¿Tienes alguna otra duda?</p>
-          <a href="/#contacto" className="bg-emerald-600 text-white px-8 py-3 rounded-full hover:bg-emerald-700 transition-colors">
+          <p className="text-gray-600 mb-6">¿Tienes alguna otra duda?</p>
+          <a 
+            href="/#contact" 
+            className="inline-block bg-emerald-600 text-white px-10 py-4 rounded-full font-medium hover:bg-emerald-700 transition-all shadow-lg"
+          >
             Escríbeme directamente
           </a>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
