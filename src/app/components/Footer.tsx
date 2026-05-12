@@ -43,7 +43,6 @@ export function Footer() {
               <li><a href="/preguntas-frecuentes.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Preguntas frecuentes</a></li>
             </ul>
           </div>
-        </div>
 
         {/* Línea inferior Copyright */}
         <div className="border-t border-emerald-700 mt-8 pt-8 text-center text-emerald-100">
