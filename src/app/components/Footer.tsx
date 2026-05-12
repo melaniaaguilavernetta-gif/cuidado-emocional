@@ -38,9 +38,9 @@ export function Footer() {
             <h4 className="text-lg mb-4">Legal</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="/politica-privacidad.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Política de privacidad</a></li>
-              <li><a href="/terminos-condiciones.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Términos y condiciones</a></li>
-              <li><a href="/codigo-etico.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Código ético</a></li>
-              <li><a href="/preguntas-frecuentes.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Preguntas frecuentes</a></li>
+<li><a href="/terminos-condiciones.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Términos y condiciones</a></li>
+<li><a href="/codigo-etico.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Código ético</a></li>
+<li><a href="/preguntas-frecuentes.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Preguntas frecuentes</a></li>
             </ul>
           </div>
 
