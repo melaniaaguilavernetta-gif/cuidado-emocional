@@ -35,11 +35,6 @@ export function About() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg max-w-xs">
-              <p className="text-gray-700 italic">
-                "Un lugar donde encontré la paz que necesitaba y las herramientas para seguir adelante"
-              </p>
-            </div>
           </div>
         </div>
       </div>
