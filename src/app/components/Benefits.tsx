@@ -54,10 +54,9 @@ export function Benefits() {
             <h2 className="text-4xl md:text-5xl mb-6 text-gray-900">
               ¿Por qué elegirme?
             </h2>
-            <p className="text-lg text-gray-700 mb-8">
-              Me comprometo a brindarte un acompañamiento profesional, cálido y efectivo 
-              que te ayudará a desarrollar tu máximo potencial emocional.
-            </p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+  Trabajaremos juntos para construir un proceso terapéutico a tu medida, explorando las herramientas que te permitan desplegar tu máximo potencial.
+</p>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <ImageWithFallback
