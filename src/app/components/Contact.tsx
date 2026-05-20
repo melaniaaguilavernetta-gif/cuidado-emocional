@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -6,27 +5,6 @@ import { Textarea } from './ui/textarea';
 import { Card, CardContent } from './ui/card';
 
 export function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Aquí iría la lógica para enviar el formulario
-    alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
   return (
     <section id="contacto" className="py-20 bg-gradient-to-b from-teal-50 to-emerald-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -41,18 +19,23 @@ export function Contact() {
           <div>
             <Card className="mb-8">
               <CardContent className="pt-6">
-                <form onSubmit={handleSubmit} className="space-y-6">
+                {/* --- AQUÍ EMPIEZA LA MAGIA DEL FORMULARIO --- */}
+                <form action="https://formsubmit.co/hola@cuidadoemocional.com" method="POST" className="space-y-6">
+                  
+                  {/* Configuraciones invisibles para que funcione mejor */}
+                  <input type="hidden" name="_subject" value="¡Nuevo mensaje de la web!" />
+                  <input type="hidden" name="_next" value="https://cuidado-emocional.vercel.app/" />
+                  <input type="hidden" name="_captcha" value="false" />
+
                   <div>
                     <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
                       Nombre completo
                     </label>
                     <Input
                       id="name"
-                      name="name"
+                      name="Nombre"
                       type="text"
                       required
-                      value={formData.name}
-                      onChange={handleChange}
                       placeholder="Tu nombre"
                       className="w-full"
                     />
@@ -64,11 +47,9 @@ export function Contact() {
                     </label>
                     <Input
                       id="email"
-                      name="email"
+                      name="Email"
                       type="email"
                       required
-                      value={formData.email}
-                      onChange={handleChange}
                       placeholder="tu@email.com"
                       className="w-full"
                     />
@@ -80,10 +61,8 @@ export function Contact() {
                     </label>
                     <Input
                       id="phone"
-                      name="phone"
+                      name="Teléfono"
                       type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
                       placeholder="+34 600 000 000"
                       className="w-full"
                     />
@@ -95,10 +74,8 @@ export function Contact() {
                     </label>
                     <Textarea
                       id="message"
-                      name="message"
+                      name="Mensaje"
                       required
-                      value={formData.message}
-                      onChange={handleChange}
                       placeholder="Cuéntanos cómo podemos ayudarte..."
                       className="w-full min-h-32"
                     />
