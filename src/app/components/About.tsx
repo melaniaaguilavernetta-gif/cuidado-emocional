@@ -21,9 +21,8 @@ export function About() {
 
             <div className="bg-emerald-50 p-6 rounded-xl border-l-4 border-emerald-600">
               <p className="text-gray-700 italic text-lg">
-                "Mi objetivo es crear un espacio donde te sientas escuchado, comprendido y apoyado 
-                en tu camino hacia el bienestar emocional."
-              </p>
+  "Sanar no es cambiar quién eres, sino reencontrarte con la persona que siempre has sido."
+</p>
             </div>
           </div>
 
