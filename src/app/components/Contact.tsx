@@ -20,12 +20,8 @@ export function Contact() {
             <Card className="mb-8">
               <CardContent className="pt-6">
                 {/* --- AQUÍ EMPIEZA LA MAGIA DEL FORMULARIO --- */}
-                <form action="https://formsubmit.co/hola@cuidadoemocional.com" method="POST" className="space-y-6">
+                <form action="https://formspree.io/f/mdajekjy" method="POST" className="space-y-6">
                   
-                  {/* Configuraciones invisibles para que funcione mejor */}
-                  <input type="hidden" name="_subject" value="¡Nuevo mensaje de la web!" />
-                  <input type="hidden" name="_next" value="https://cuidado-emocional.vercel.app/" />
-                  <input type="hidden" name="_captcha" value="false" />
 
                   <div>
                     <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
