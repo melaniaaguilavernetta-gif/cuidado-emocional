@@ -22,7 +22,6 @@ export function Contact() {
                 {/* --- AQUÍ EMPIEZA LA MAGIA DEL FORMULARIO --- */}
                 <form action="https://formspree.io/f/mdajekjy" method="POST" className="space-y-6">
                   
-
                   <div>
                     <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
                       Nombre completo
@@ -128,31 +127,6 @@ export function Contact() {
                 </div>
               </div>
             </div>
-
-            <Card className="bg-gradient-to-br from-emerald-600 to-teal-600 text-white">
-              <CardContent className="pt-6">
-                <h4 className="text-xl mb-3">Horario de atención</h4>
-                <div className="space-y-2 text-emerald-50">
-                  <div className="flex justify-between">
-                    <span>Lunes - Viernes:</span>
-                    <span>9:00 - 20:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sábados:</span>
-                    <span>Cerrado</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Domingos:</span>
-                    <span>Cerrado</span>
-                  </div>
-                </div>
-                <div className="mt-4 pt-4 border-t border-emerald-400">
-                  <p className="text-sm text-emerald-50">
-                    * Sesiones online disponibles 24/7 con cita previa
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
