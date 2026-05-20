@@ -28,7 +28,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center gap-3">
-            <Logo className="h-10 w-auto" isScrolled={isScrolled} />
+            <img src="/logo.jpeg" alt="Logo Cuidado Emocional" className="w-12 h-12 rounded-full object-cover border-2 border-emerald-500 shadow-sm" />
             <span className={`text-2xl ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
               Cuidado Emocional
             </span>
