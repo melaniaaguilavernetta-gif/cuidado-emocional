@@ -1,5 +1,4 @@
 import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
-import { Logo } from './Logo';
 
 export function Footer() {
   return (
@@ -9,9 +8,7 @@ export function Footer() {
           {/* Columna 1: Logo y Redes */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex items-center gap-3">
-                <Logo className="w-10 h-10" isScrolled={false} />
-              </div>
+              <img src="/logo.jpeg" alt="Logo Cuidado Emocional" className="w-10 h-10 rounded-full object-cover" />
               <span className="text-2xl">Cuidado Emocional</span>
             </div>
             <p className="text-gray-400 mb-4">
@@ -43,7 +40,7 @@ export function Footer() {
               <li><a href="/preguntas-frecuentes.pdf" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Preguntas frecuentes</a></li>
             </ul>
           </div>
-        </div> {/* <--- ESTA ES LA ETIQUETA QUE FALTABA PARA QUE FUNCIONE */}
+        </div>
 
         {/* Línea inferior Copyright */}
         <div className="border-t border-emerald-700 mt-8 pt-8 text-center text-emerald-100">
