@@ -8,7 +8,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl text-emerald-800 mb-6">
-              Mi Misión
+              Misión
             </h2>
             <p className="text-lg text-gray-700 mb-6">
               En Cuidado Emocional creo que cada persona merece un espacio seguro donde expresar sus emociones, 
