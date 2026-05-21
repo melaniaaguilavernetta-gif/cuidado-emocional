@@ -15,8 +15,7 @@ export function About() {
               sanar heridas y desarrollar las herramientas necesarias para enfrentar los desafíos de la vida.
             </p>
             <p className="text-lg text-gray-700 mb-8">
-              Mi enfoque combina la empatía profunda con el desarrollo de tu resiliencia interior, 
-              acompañándote en cada paso de tu proceso de transformación personal.
+              La combinación de la empatía profunda con el desarrollo de tu resiliencia interior me permiten acompañarte de forma contínua y consistente en cada paso de tu transformación personal.
             </p>
 
             <div className="bg-emerald-50 p-6 rounded-xl border-l-4 border-emerald-600">
