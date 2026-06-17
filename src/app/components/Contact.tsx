@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
@@ -5,13 +6,38 @@ import { Textarea } from './ui/textarea';
 import { Card, CardContent } from './ui/card';
 
 export function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`Consulta de ${formData.name}`);
+    const body = encodeURIComponent(
+      `Nombre: ${formData.name}\nEmail: ${formData.email}\nTeléfono: ${formData.phone}\n\nMensaje:\n${formData.message}`
+    );
+    window.location.href = `mailto:hola@cuidadoemocional.com?subject=${subject}&body=${body}`;
+    setFormData({ name: '', email: '', phone: '', message: '' });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
   return (
     <section id="contacto" className="py-20 bg-gradient-to-b from-teal-50 to-emerald-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">Comienza tu transformación hoy</h2>
+          <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">¿Listo/a para dar el primer paso?</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Estoy aquí para acompañarte. Contáctame y da el primer paso hacia tu bienestar
+            Reserva tu primera sesión y descubre cómo la combinación de TCC y PNL puede ayudarte
+            a vivir con más calma, claridad y confianza.
           </p>
         </div>
 
@@ -19,18 +45,18 @@ export function Contact() {
           <div>
             <Card className="mb-8">
               <CardContent className="pt-6">
-                {/* --- AQUÍ EMPIEZA LA MAGIA DEL FORMULARIO --- */}
-                <form action="https://formspree.io/f/mdajekjy" method="POST" className="space-y-6">
-                  
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
                       Nombre completo
                     </label>
                     <Input
                       id="name"
-                      name="Nombre"
+                      name="name"
                       type="text"
                       required
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Tu nombre"
                       className="w-full"
                     />
@@ -42,9 +68,11 @@ export function Contact() {
                     </label>
                     <Input
                       id="email"
-                      name="Email"
+                      name="email"
                       type="email"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="tu@email.com"
                       className="w-full"
                     />
@@ -56,8 +84,10 @@ export function Contact() {
                     </label>
                     <Input
                       id="phone"
-                      name="Teléfono"
+                      name="phone"
                       type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
                       placeholder="+34 600 000 000"
                       className="w-full"
                     />
@@ -69,9 +99,11 @@ export function Contact() {
                     </label>
                     <Textarea
                       id="message"
-                      name="Mensaje"
+                      name="message"
                       required
-                      placeholder="Cuéntanos cómo podemos ayudarte..."
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Cuéntame brevemente qué te trae por aquí..."
                       className="w-full min-h-32"
                     />
                   </div>
@@ -120,13 +152,32 @@ export function Contact() {
                   <div>
                     <div className="text-gray-900 mb-1">Ubicación</div>
                     <p className="text-gray-600">
-                      <br />
                       Girona, España
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+
+            <Card className="bg-gradient-to-br from-emerald-600 to-teal-600 text-white">
+              <CardContent className="pt-6">
+                <h4 className="text-xl mb-3">Horario de atención</h4>
+                <div className="space-y-2 text-emerald-50">
+                  <div className="flex justify-between">
+                    <span>Lunes - Viernes:</span>
+                    <span>9:00 - 20:00</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Sábados:</span>
+                    <span>Cerrado</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Domingos:</span>
+                    <span>Cerrado</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>

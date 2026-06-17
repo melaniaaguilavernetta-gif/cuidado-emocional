@@ -12,12 +12,14 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 to-teal-800/70"></div>
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mt-24">
         <h1 className="text-5xl md:text-7xl mb-6 animate-fade-in">
-          Cuidado Emocional
+          Transforma tu mente, transforma tu vida
         </h1>
-        <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90">
-          Un espacio seguro donde encontrarás el apoyo emocional que necesitas para crecer, sanar y transformarte
+        <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 mb-10">
+          Te acompaño en un proceso terapéutico personalizado, combinando las técnicas más efectivas de la
+          Terapia Cognitivo-Conductual y la Programación Neurolingüística (PNL) para que superes tus bloqueos,
+          gestiones tus emociones y construyas la vida que deseas.
         </p>
       </div>
     </section>

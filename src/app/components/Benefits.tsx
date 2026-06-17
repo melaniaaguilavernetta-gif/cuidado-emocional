@@ -3,24 +3,24 @@ import { Shield, Sparkles, Compass, Smile } from 'lucide-react';
 
 const benefits = [
   {
-    icon: Shield,
-    title: 'Espacio Seguro y Confidencial',
-    description: 'Tu privacidad es mi prioridad. Todas las sesiones son completamente confidenciales.',
-  },
-  {
     icon: Sparkles,
-    title: 'Enfoque Personalizado',
-    description: 'Cada persona es única. Adapto mi enfoque a tus necesidades específicas.',
+    title: 'Enfoque integrador',
+    description: 'No me limito a una sola técnica. Selecciono las herramientas más adecuadas para tu situación concreta.',
   },
   {
     icon: Compass,
-    title: 'Herramientas Prácticas',
-    description: 'Te acompaño con técnicas y estrategias que podrás aplicar en tu día a día.',
+    title: 'Disponibilidad y cercanía',
+    description: 'Estoy disponible entre sesiones para dudas puntuales, no solo durante la hora de consulta.',
   },
   {
     icon: Smile,
-    title: 'Resultados Duraderos',
-    description: 'No solo busco alivio temporal, sino un cambio profundo y sostenible.',
+    title: 'Atención personalizada',
+    description: 'Cada proceso es único. Adapto las sesiones a tus necesidades, objetivos y circunstancias para ofrecerte un acompañamiento realmente efectivo.',
+  },
+  {
+    icon: Shield,
+    title: 'Herramientas para toda la vida',
+    description: 'Además de trabajar tus dificultades actuales, aprenderás recursos prácticos que podrás utilizar de forma autónoma en tu día a día y ante futuros desafíos.',
   },
 ];
 
@@ -28,8 +28,8 @@ export function Benefits() {
   return (
     <section className="py-20 bg-gradient-to-b from-emerald-50 to-teal-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          <div className="order-2 md:order-1 pt-8">
             <div className="grid gap-8">
               {benefits.map((benefit, index) => {
                 const Icon = benefit.icon;
@@ -54,9 +54,10 @@ export function Benefits() {
             <h2 className="text-4xl md:text-5xl mb-6 text-gray-900">
               ¿Por qué elegirme?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-  Trabajaremos juntos para construir un proceso terapéutico a tu medida, explorando las herramientas que te permitan desplegar tu máximo potencial.
-</p>
+            <p className="text-lg text-gray-700 mb-8">
+              Me comprometo a ofrecerte un acompañamiento profesional, cálido y efectivo que combina
+              la solidez de la ciencia con técnicas orientadas al cambio rápido y profundo.
+            </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <ImageWithFallback
