@@ -13,14 +13,27 @@ export function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Consulta de ${formData.name}`);
-    const body = encodeURIComponent(
-      `Nombre: ${formData.name}\nEmail: ${formData.email}\nTeléfono: ${formData.phone}\n\nMensaje:\n${formData.message}`
-    );
-    window.location.href = `mailto:hola@cuidadoemocional.com?subject=${subject}&body=${body}`;
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    
+    // Esto envía los datos a Formspree de forma invisible
+    const response = await fetch(https://formspree.io/f/mwvjjvae, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      // Si se envía bien, sale un aviso y se vacían las casillas
+      alert("¡Mensaje enviado con éxito! Me pondré en contacto contigo muy pronto.");
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } else {
+      // Si algo falla
+      alert("Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo.");
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
