@@ -17,7 +17,7 @@ export function Contact() {
     e.preventDefault();
     
     // Esto envía los datos a Formspree de forma invisible
-    const response = await fetch(https://formspree.io/f/mwvjjvae, {
+    const response = await fetch("https://formspree.io/f/mwvjjvae", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
