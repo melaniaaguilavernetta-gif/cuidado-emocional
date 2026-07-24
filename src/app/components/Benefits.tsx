@@ -29,27 +29,8 @@ export function Benefits() {
     <section className="py-20 bg-gradient-to-b from-emerald-50 to-teal-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="order-2 md:order-1 pt-8">
-            <div className="grid gap-8">
-              {benefits.map((benefit, index) => {
-                const Icon = benefit.icon;
-                return (
-                  <div key={index} className="flex gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-emerald-600" />
-                      </div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl mb-2 text-gray-900">{benefit.title}</h3>
-                      <p className="text-gray-600">{benefit.description}</p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
+          
+          {/* 1. BLOQUE DEL H2: Ahora va primero en el código para el SEO y Accesibilidad */}
           <div className="order-1 md:order-2">
             <h2 className="text-4xl md:text-5xl mb-6 text-gray-900">
               ¿Por qué elegirme?
@@ -75,6 +56,31 @@ export function Benefits() {
               </div>
             </div>
           </div>
+
+          {/* 2. BLOQUE DE LOS H3: Ahora va después del H2 estructuralmente */}
+          <div className="order-2 md:order-1 pt-8">
+            <div className="grid gap-8">
+              {benefits.map((benefit, index) => {
+                const Icon = benefit.icon;
+                return (
+                  <div key={index} className="flex gap-4">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
+                        {/* Subimos ligeramente el color del icono para asegurar contraste */}
+                        <Icon className="w-6 h-6 text-emerald-700" />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-xl mb-2 text-gray-900">{benefit.title}</h3>
+                      {/* Corregimos el gris a 700 para contraste */}
+                      <p className="text-gray-700">{benefit.description}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
