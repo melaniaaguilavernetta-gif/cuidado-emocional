@@ -49,10 +49,11 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
+         {/* Mobile Menu Button */}
           <button
             className="md:hidden"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"}
           >
             {isMobileMenuOpen ? (
               <X className={`w-6 h-6 ${isScrolled ? 'text-gray-900' : 'text-white'}`} />
