@@ -15,17 +15,17 @@ export function Footer() {
               Acompañamiento emocional profesional para tu bienestar y transformación personal.
             </p>
             <div className="flex space-x-4">
-              {/* Enlaces limpios y a prueba de aplicaciones móviles */}
-              <a href="https://facebook.com/profile.php?id=61589322338702" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
+              {/* Enlaces limpios y a prueba de aplicaciones móviles con accesibilidad */}
+              <a href="https://facebook.com/profile.php?id=61589322338702" aria-label="Visitar perfil de Facebook" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-emerald-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="https://instagram.com/emocionalcuidado" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
+              <a href="https://instagram.com/emocionalcuidado" aria-label="Visitar perfil de Instagram" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="https://linkedin.com/in/cuidado-emocional-7a6a66409" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+              <a href="https://linkedin.com/in/cuidado-emocional-7a6a66409" aria-label="Visitar perfil de LinkedIn" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="https://x.com/cuidaemocion" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-500 transition-colors">
+              <a href="https://x.com/cuidaemocion" aria-label="Visitar perfil de Twitter" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-sky-500 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
