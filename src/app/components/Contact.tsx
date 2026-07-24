@@ -48,7 +48,6 @@ export function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">¿Listo/a para dar el primer paso?</h2>
-          {/* Corregido a text-gray-700 */}
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Reserva tu primera sesión y descubre cómo la combinación de TCC y PNL puede ayudarte
             a vivir con más calma, claridad y confianza.
@@ -122,7 +121,8 @@ export function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
+                  {/* AQUÍ ESTÁ EL CAMBIO: bg-emerald-700 y hover:bg-emerald-800 */}
+                  <Button type="submit" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white">
                     Enviar mensaje
                     <Send className="ml-2 w-4 h-4" />
                   </Button>
@@ -137,12 +137,10 @@ export function Contact() {
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                    {/* Icono a 700 */}
                     <Mail className="w-6 h-6 text-emerald-700" />
                   </div>
                   <div>
                     <div className="text-gray-900 mb-1">Email</div>
-                    {/* Enlace a 700 */}
                     <a href="mailto:hola@cuidadoemocional.com" className="text-emerald-700 hover:underline">
                       hola@cuidadoemocional.com
                     </a>
@@ -151,12 +149,10 @@ export function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                    {/* Icono a 700 */}
                     <Phone className="w-6 h-6 text-teal-700" />
                   </div>
                   <div>
                     <div className="text-gray-900 mb-1">Teléfono</div>
-                    {/* Enlace a 700 */}
                     <a href="tel:+34696682277" className="text-emerald-700 hover:underline">
                       +34 696 68 22 77
                     </a>
@@ -165,12 +161,10 @@ export function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                    {/* Icono a 700 */}
                     <MapPin className="w-6 h-6 text-green-700" />
                   </div>
                   <div>
                     <div className="text-gray-900 mb-1">Ubicación</div>
-                    {/* Texto a 700 */}
                     <p className="text-gray-700">
                       Girona, España
                     </p>
@@ -181,7 +175,6 @@ export function Contact() {
 
             <Card className="bg-gradient-to-br from-emerald-600 to-teal-600 text-white">
               <CardContent className="pt-6">
-                {/* Cambiado de h4 a h3 para mantener la jerarquía */}
                 <h3 className="text-xl mb-3">Horario de atención</h3>
                 <div className="space-y-2 text-emerald-50">
                   <div className="flex justify-between">
