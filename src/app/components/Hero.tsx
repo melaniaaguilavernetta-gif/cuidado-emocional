@@ -5,7 +5,8 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1759764371201-0c3234cab187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMG5hdHVyZSUyMGxhbmRzY2FwZSUyMHBlYWNlZnVsJTIwbWVhZG93fGVufDF8fHx8MTc3Mjc5NDg2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          // 👇 AQUÍ ESTÁ EL CAMBIO: f&fm=webp en lugar de &fm=jpg
+          src="https://images.unsplash.com/photo-1759764371201-0c3234cab187?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMG5hdHVyZSUyMGxhbmRzY2FwZSUyMHBlYWNlZnVsJTIwbWVhZG93fGVufDF8fHx8MTc3Mjc5NDg2M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Acompañamiento emocional"
           className="w-full h-full object-cover"
         />
