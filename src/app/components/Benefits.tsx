@@ -42,16 +42,20 @@ export function Benefits() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1597824295725-3bc5dc49f4e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHBsYW50cyUyMGdyb3d0aCUyMG1pbmRmdWxuZXNzfGVufDF8fHx8MTc3Mjc5MzYzNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  // 👇 CAMBIOS APLICADOS: fm=webp, w=800 y loading="lazy"
+                  src="https://images.unsplash.com/photo-1597824295725-3bc5dc49f4e1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHBsYW50cyUyMGdyb3d0aCUyMG1pbmRmdWxuZXNzfGVufDF8fHx8MTc3Mjc5MzYzNHww&ixlib=rb-4.1.0&q=80&w=800&utm_source=figma&utm_medium=referral"
                   alt="Apoyo empático"
                   className="w-full h-48 object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1759513332004-c264d9231152?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdW5yaXNlJTIwaG9wZSUyMHBlYWNlZnVsJTIwbW9ybmluZ3xlbnwxfHx8fDE3NzI3OTM2MzR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                  // 👇 CAMBIOS APLICADOS: fm=webp, w=800 y loading="lazy"
+                  src="https://images.unsplash.com/photo-1759513332004-c264d9231152?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdW5yaXNlJTIwaG9wZSUyMHBlYWNlZnVsJTIwbW9ybmluZ3xlbnwxfHx8fDE3NzI3OTM2MzR8MA&ixlib=rb-4.1.0&q=80&w=800&utm_source=figma&utm_medium=referral"
                   alt="Crecimiento personal"
                   className="w-full h-48 object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>
