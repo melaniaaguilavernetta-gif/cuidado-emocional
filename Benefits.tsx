@@ -5,7 +5,7 @@ const benefits = [
   {
     icon: Sparkles,
     title: 'Enfoque integrador',
-    description: 'No me limito a una sola técnica. Selecciono las herramientas más adecuadas para tu situación concreta.',
+    description: 'No me limito a una sola técnica. Selecciono las herramientas prácticas más adecuadas para tu situación concreta, ya sea para vencer fobias limitantes, resolver conflictos de pareja o recuperar tu paz mental.',
   },
   {
     icon: Compass,
@@ -20,7 +20,7 @@ const benefits = [
   {
     icon: Shield,
     title: 'Herramientas para toda la vida',
-    description: 'Además de trabajar tus dificultades actuales, aprenderás recursos prácticos que podrás utilizar de forma autónoma en tu día a día y ante futuros desafíos.',
+    description: 'Además de aliviar tu malestar actual, aprenderás recursos para la gestión del estrés y la prevención de recaídas frente a adicciones o hábitos destructivos. Te llevarás estrategias que podrás utilizar de forma autónoma ante cualquier desafío futuro.',
   },
 ];
 
