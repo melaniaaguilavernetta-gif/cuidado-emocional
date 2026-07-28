@@ -34,7 +34,10 @@ export function Contact() {
     <section id="contacto" className="py-20 bg-gradient-to-b from-teal-50 to-emerald-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">¿Listo/a para dar el primer paso?</h2>
+          {/* H2 con font-bold para mantener la coherencia de diseño */}
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+            ¿Listo/a para dar el primer paso?
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Reserva tu primera sesión y descubre cómo la combinación de TCC y PNL puede ayudarte
             a vivir con más calma, claridad y confianza.
@@ -119,7 +122,8 @@ export function Contact() {
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl mb-6 text-gray-900">Información de contacto</h3>
+              {/* H3 con font-semibold */}
+              <h3 className="text-2xl font-semibold mb-6 text-gray-900">Información de contacto</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
@@ -161,7 +165,8 @@ export function Contact() {
 
             <Card className="bg-gradient-to-br from-emerald-600 to-teal-600 text-white">
               <CardContent className="pt-6">
-                <h4 className="text-xl mb-3">Horario de atención</h4>
+                {/* H4 con font-semibold */}
+                <h4 className="text-xl font-semibold mb-3">Horario de atención</h4>
                 <div className="space-y-2 text-emerald-50">
                   <div className="flex justify-between">
                     <span>Lunes - Viernes:</span>
