@@ -24,9 +24,7 @@ export function Hero() {
         </h2>
         
         <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 mb-10">
-          Te acompaño en un proceso terapéutico personalizado, combinando las técnicas más efectivas de la
-          Terapia Cognitivo-Conductual y la Programación Neurolingüística (PNL) para que superes tus bloqueos,
-          gestiones tus emociones y construyas la vida que deseas.
+          Te acompaño en un proceso de crecimiento personal y terapia online adaptada a ti, combinando las herramientas más efectivas de la Terapia Cognitivo-Conductual y la PNL. Te guiaré paso a paso en la gestión de la ansiedad y el estrés, ayudándote a sanar tu autoestima tras etapas de depresión o estancamiento, para que superes tus bloqueos y construyas la vida que deseas.
         </p>
       </div>
     </section>
