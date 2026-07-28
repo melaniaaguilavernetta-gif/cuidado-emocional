@@ -5,7 +5,6 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          // 👇 Aquí hemos cambiado fm=jpg a fm=webp y q=80 a q=60
           src="https://images.unsplash.com/photo-1759764371201-0c3234cab187?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMG5hdHVyZSUyMGxhbmRzY2FwZSUyMHBlYWNlZnVsJTIwbWVhZG93fGVufDF8fHx8MTc3Mjc5NDg2M3ww&ixlib=rb-4.1.0&q=60&w=1080&utm_source=figma&utm_medium=referral"
           alt="Acompañamiento emocional"
           className="w-full h-full object-cover"
@@ -14,9 +13,16 @@ export function Hero() {
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mt-24">
-        <h1 className="text-5xl md:text-7xl mb-6 animate-fade-in">
-          Transforma tu mente, transforma tu vida
+        {/* Este es nuestro nuevo H1 estratégico para Google */}
+        <h1 className="text-lg md:text-xl font-medium tracking-widest uppercase mb-4 text-emerald-200">
+          Acompañamiento Emocional y Terapia Online
         </h1>
+        
+        {/* Tu frase estrella sigue siendo la protagonista visual, ahora como H2 */}
+        <h2 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          Transforma tu mente, transforma tu vida
+        </h2>
+        
         <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 mb-10">
           Te acompaño en un proceso terapéutico personalizado, combinando las técnicas más efectivas de la
           Terapia Cognitivo-Conductual y la Programación Neurolingüística (PNL) para que superes tus bloqueos,
