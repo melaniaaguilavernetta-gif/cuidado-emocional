@@ -21,7 +21,7 @@ export function About() {
               <p className="text-gray-700">
                 Identificamos juntos los pensamientos y patrones de comportamiento que te limitan. A través de técnicas
                 prácticas y estructuradas, aprenderás a transformar creencias negativas en recursos que impulsen tu bienestar.
-                La TCC es el enfoque con mayor respaldo para tratar ansiedad, estrés y problemas de autoestima.
+                La TCC es el método con mayor respaldo científico para proporcionarte herramientas reales frente a las dificultades de la vida. Te acompaño a gestionar el estrés y la ansiedad, mejorar tu autoestima, vencer fobias o miedos paralizantes, y encontrar la salida en momentos de depresión o frente a adicciones que limitan tu libertad.
               </p>
             </div>
             <div className="bg-teal-50 p-6 rounded-xl border-l-4 border-teal-600 shadow-sm">
