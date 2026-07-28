@@ -41,7 +41,8 @@ export function Benefits() {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl mb-2 text-gray-900">{benefit.title}</h3>
+                      {/* H3 con fuente en negrita suave (font-semibold) */}
+                      <h3 className="text-xl font-semibold mb-2 text-gray-900">{benefit.title}</h3>
                       <p className="text-gray-600">{benefit.description}</p>
                     </div>
                   </div>
@@ -51,8 +52,9 @@ export function Benefits() {
           </div>
 
           <div className="order-1 md:order-2">
-            <h2 className="text-4xl md:text-5xl mb-6 text-gray-900">
-              ¿Por qué elegirme?
+            {/* H2 enriquecido para SEO y con fuente en negrita (font-bold) */}
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              ¿Por qué elegir mi acompañamiento online?
             </h2>
             <p className="text-lg text-gray-700 mb-8">
               Me comprometo a ofrecerte un acompañamiento profesional, cálido y efectivo que combina
