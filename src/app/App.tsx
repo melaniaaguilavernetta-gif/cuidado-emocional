@@ -1,12 +1,12 @@
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Services } from './components/Services';
-import { Benefits } from './components/Benefits';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-// Importamos tu nuevo artículo
-import { ArticleAnsiedad } from './components/ArticleAnsiedad';
+import { Header } from './Header';
+import { Hero } from './Hero';
+import { About } from './About';
+import { Services } from './Services';
+import { Benefits } from './Benefits';
+import { Contact } from './Contact';
+import { Footer } from './Footer';
+// Importamos tu nuevo artículo directamente desde la misma carpeta
+import { ArticleAnsiedad } from './ArticleAnsiedad';
 
 export default function App() {
   const path = window.location.pathname;
@@ -26,7 +26,7 @@ export default function App() {
         <Services />
         <Benefits />
         
-        {/* NUEVA SECCIÓN DE BLOG Y RECURSOS */}
+        {/* SECCIÓN DE BLOG Y RECURSOS */}
         <section id="blog" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -37,7 +37,6 @@ export default function App() {
             </div>
             
             <div className="max-w-3xl mx-auto">
-              {/* Esta etiqueta <a> es el enlace que lleva al artículo */}
               <a href="/ansiedad-trabajo" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Gestión de la Ansiedad</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Cómo calmar la ansiedad en el trabajo: 5 técnicas prácticas</h3>
