@@ -1,11 +1,11 @@
-import { Header } from './Header';
-import { Hero } from './Hero';
-import { About } from './About';
-import { Services } from './Services';
-import { Benefits } from './Benefits';
-import { Contact } from './Contact';
-import { Footer } from './Footer';
-import { ArticleAnsiedad } from './ArticleAnsiedad';
+import { Header } from './Header.tsx';
+import { Hero } from './Hero.tsx';
+import { About } from './About.tsx';
+import { Services } from './Services.tsx';
+import { Benefits } from './Benefits.tsx';
+import { Contact } from './Contact.tsx';
+import { Footer } from './Footer.tsx';
+import { ArticleAnsiedad } from './ArticleAnsiedad.tsx';
 
 export default function App() {
   const path = window.location.pathname;
