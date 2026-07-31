@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Hero } from '../Hero';
 import { About } from '../About';
@@ -10,6 +11,22 @@ import { ArticleDialogoInterno } from './ArticleDialogoInterno';
 
 export default function App() {
   const path = window.location.pathname;
+
+  // Esto detecta si venimos del botón del artículo y baja automáticamente al contacto
+  useEffect(() => {
+    if (path === '/') {
+      const shouldScroll = sessionStorage.getItem('scrollToContact');
+      if (shouldScroll === 'true') {
+        sessionStorage.removeItem('scrollToContact');
+        setTimeout(() => {
+          const contactElement = document.getElementById('contacto');
+          if (contactElement) {
+            contactElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 200);
+      }
+    }
+  }, [path]);
 
   // RUTAS DE TUS ARTÍCULOS
   if (path === '/ansiedad-trabajo') {
@@ -61,7 +78,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* SECCIÓN DE CONTACTO CON SU ID CORRESPONDIENTE */}
+        {/* SECCIÓN DE CONTACTO CON SU ID */}
         <div id="contacto">
           <Contact />
         </div>
