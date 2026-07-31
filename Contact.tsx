@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { Button } from './ui/button';
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { Card, CardContent } from './ui/card';
+import { Button } from './button.tsx';
+import { Input } from './input.tsx';
+import { Textarea } from './textarea.tsx';
+import { Card, CardContent } from './card.tsx';
 
 export function Contact() {
   const [formData, setFormData] = useState({
