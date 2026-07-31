@@ -35,9 +35,15 @@ export function ArticleAnsiedad() {
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Da el primer paso hacia tu bienestar
             </h2>
-            <a href="/#contacto" className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors">
-  Reserva tu sesión hoy
-</a>
+            <button 
+              onClick={() => {
+                sessionStorage.setItem('scrollToContact', 'true');
+                window.location.href = '/';
+              }}
+              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
+            >
+              Reserva tu sesión hoy
+            </button>
           </div>
         </div>
       </main>
