@@ -2,16 +2,30 @@ export function ArticleDialogoInterno() {
   return (
     <div className="min-h-screen bg-gray-50 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-sm p-8 md:p-12 border border-gray-100">
-        <a href="/" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium mb-8 transition-colors">
-          ← Volver al inicio
-        </a>
-
-        <span className="text-emerald-700 font-semibold tracking-wide uppercase text-sm">Crecimiento Personal</span>
         
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mt-3 mb-8 leading-tight">
+        {/* Enlace para volver */}
+        <div className="mb-8">
+          <a href="/" className="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium transition-colors">
+            ← Volver al inicio
+          </a>
+        </div>
+
+        {/* Categoría */}
+        <span className="text-emerald-700 font-semibold tracking-wide uppercase text-sm block mb-3">
+          Crecimiento Personal
+        </span>
+        
+        {/* Título principal */}
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
           ¿Le hablarías a un amigo como te hablas a ti mismo/a? Cómo reprogramar tu voz crítica
         </h1>
 
+        {/* Autor y Fecha */}
+        <div className="text-gray-500 text-sm mb-6 pb-6 border-b border-gray-100">
+          Por Melania • 31 Julio 2026
+        </div>
+
+        {/* Contenido del artículo */}
         <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
           <p>Si un buen amigo acudiera a ti después de cometer un error en el trabajo, fracasar en un proyecto o tener un mal día, ¿qué le dirías? Seguramente le ofrecerías palabras de consuelo, le recordarías sus fortalezas y le ayudarías a buscar una solución. Le tratarías con paciencia, empatía y respeto.</p>
           
@@ -20,7 +34,7 @@ export function ArticleDialogoInterno() {
           <p className="font-medium text-gray-900">La pregunta que debemos hacernos es: Si no permitirías que nadie le hablara así a las personas que quieres, ¿por qué te permites hablarte así a ti mismo/a?</p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">El desgaste silencioso de la autocrítica</h2>
-          <p>Normalizamos tratarnos con dureza porque, erróneamente, creemos que esa exigencia nos hará mejorar, ser más responsables o no repetir errores. Pero la ciencia y la psicología nos demuestran exactamente lo contrario.</p>
+          <p>Normalizamos tratarnos con dureza porque, erróneamente, creemos que esa exigencia nos hará mejorar, ser más responsables o no repetir errores. But la ciencia y la psicología nos demuestran exactamente lo contrario.</p>
           <p>Cuando esa voz crítica toma el control, nuestro cerebro lo interpreta como una amenaza real. Esto provoca que la ansiedad, el estrés y la inseguridad se disparen. Vivir bajo el asedio constante de tu propia mente:</p>
           
           <ul className="list-disc pl-6 space-y-2">
@@ -31,7 +45,7 @@ export function ArticleDialogoInterno() {
           </ul>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Cómo cambiar el guion: El enfoque de la TCC y la PNL</h2>
-          <p>La buena noticia es que no tienes que vivir en guerra con tu propia mente. Tu diálogo interno es un hábito aprendido y, como cualquier hábito, se puede desaprender y reprogramar.</p>
+          <p>La buena noticia es que não tienes que vivir en guerra con tu propia mente. Tu diálogo interno es un hábito aprendido y, como cualquier hábito, se puede desaprender y reprogramar.</p>
           <p>En Cuidado Emocional, uno de los trabajos más transformadores que hacemos en consulta es abordar este "machaque" interno combinando dos herramientas muy potentes:</p>
           
           <ul className="list-disc pl-6 space-y-4">
