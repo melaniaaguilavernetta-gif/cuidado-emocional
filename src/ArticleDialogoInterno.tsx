@@ -34,7 +34,7 @@ export function ArticleDialogoInterno() {
           <p className="font-medium text-gray-900">La pregunta que debemos hacernos es: Si no permitirías que nadie le hablara así a las personas que quieres, ¿por qué te permites hablarte así a ti mismo/a?</p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">El desgaste silencioso de la autocrítica</h2>
-          <p>Normalizamos tratarnos con dureza porque, erróneamente, creemos que esa exigencia nos hará mejorar, ser más responsables o no repetir errores. But la ciencia y la psicología nos demuestran exactamente lo contrario.</p>
+          <p>Normalizamos tratarnos con dureza porque, erróneamente, creemos que esa exigencia nos hará mejorar, ser más responsables o no repetir errores. Pero la ciencia y la psicología nos demuestran exactamente lo contrario.</p>
           <p>Cuando esa voz crítica toma el control, nuestro cerebro lo interpreta como una amenaza real. Esto provoca que la ansiedad, el estrés y la inseguridad se disparen. Vivir bajo el asedio constante de tu propia mente:</p>
           
           <ul className="list-disc pl-6 space-y-2">
@@ -45,7 +45,7 @@ export function ArticleDialogoInterno() {
           </ul>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">Cómo cambiar el guion: El enfoque de la TCC y la PNL</h2>
-          <p>La buena noticia es que não tienes que vivir en guerra con tu propia mente. Tu diálogo interno es un hábito aprendido y, como cualquier hábito, se puede desaprender y reprogramar.</p>
+          <p>La buena noticia es que no tienes que vivir en guerra con tu propia mente. Tu diálogo interno es un hábito aprendido y, como cualquier hábito, se puede desaprender y reprogramar.</p>
           <p>En Cuidado Emocional, uno de los trabajos más transformadores que hacemos en consulta es abordar este "machaque" interno combinando dos herramientas muy potentes:</p>
           
           <ul className="list-disc pl-6 space-y-4">
@@ -78,3 +78,8 @@ export function ArticleDialogoInterno() {
               Reserva tu sesión hoy
             </button>
           </div>
+        </div>
+      </div>
+    </div>
+  );
+}
