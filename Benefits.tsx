@@ -1,4 +1,4 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { ImageWithFallback } from './ImageWithFallback.tsx';
 import { Shield, Sparkles, Compass, Smile } from 'lucide-react';
 
 const benefits = [
