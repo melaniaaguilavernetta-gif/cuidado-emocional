@@ -1,5 +1,5 @@
-import { Header } from './Header.tsx';
-import { Footer } from './Footer.tsx';
+import { Header } from '../Header';
+import { Footer } from '../Footer';
 
 export function ArticleAnsiedad() {
   return (
