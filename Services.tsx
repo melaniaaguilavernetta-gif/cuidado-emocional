@@ -1,5 +1,5 @@
 import { Brain, Zap, Shield, TrendingUp, MessageCircle, Video } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from './card.tsx';
 
 const forWhom = [
   'Sientes ansiedad, estrés o agotamiento emocional',
