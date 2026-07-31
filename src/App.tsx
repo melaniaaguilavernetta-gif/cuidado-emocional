@@ -6,7 +6,7 @@ import { Benefits } from '../Benefits';
 import { Contact } from '../Contact';
 import { Footer } from '../Footer';
 import { ArticleAnsiedad } from './ArticleAnsiedad';
-import { ArticleDialogoInterno } from './ArticleDialogoInterno'; // Importado el nuevo artículo
+import { ArticleDialogoInterno } from './ArticleDialogoInterno';
 
 export default function App() {
   const path = window.location.pathname;
@@ -16,7 +16,7 @@ export default function App() {
     return <ArticleAnsiedad />;
   }
   
-  if (path === '/dialogo-interno') { // Ruta para tu nuevo artículo
+  if (path === '/dialogo-interno') {
     return <ArticleDialogoInterno />;
   }
 
@@ -41,7 +41,7 @@ export default function App() {
             
             <div className="max-w-3xl mx-auto space-y-6"> 
               
-              {/* ARTÍCULO 2: Diálogo Interno (El más nuevo primero) */}
+              {/* ARTÍCULO 2: Diálogo Interno */}
               <a href="/dialogo-interno" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Crecimiento Personal</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">¿Le hablarías a un amigo como te hablas a ti mismo/a?</h3>
@@ -61,7 +61,10 @@ export default function App() {
           </div>
         </section>
 
-        <Contact />
+        {/* SECCIÓN DE CONTACTO CON SU ID CORRESPONDIENTE */}
+        <div id="contacto">
+          <Contact />
+        </div>
       </main>
       <Footer />
     </div>
