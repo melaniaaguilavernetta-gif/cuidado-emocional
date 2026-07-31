@@ -35,9 +35,9 @@ export function ArticleAnsiedad() {
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Da el primer paso hacia tu bienestar
             </h2>
-            <a href="/#contacto" className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white font-medium py-3 px-6 rounded-lg transition-colors">
-              Reserva tu sesión online
-            </a>
+            <a href="/#contacto" className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors">
+  Reserva tu sesión hoy
+</a>
           </div>
         </div>
       </main>

@@ -69,8 +69,8 @@ export function ArticleDialogoInterno() {
             <p className="font-semibold text-gray-900 mb-2">📍 Da el primer paso hacia tu bienestar mental:</p>
             <p className="mb-4">Si sientes que tu nivel de autoexigencia te está pasando factura y necesitas ayuda para desenredar esos nudos mentales, en Cuidado Emocional tienes un espacio seguro para empezar a hacerlo. Ya sea en mi consulta presencial en Girona o a través de terapia online, estoy aquí para acompañarte a recuperar el control de tu bienestar.</p>
             <a href="/#contacto" className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors">
-              Reserva tu sesión hoy
-            </a>
+  Reserva tu sesión hoy
+</a>
           </div>
         </div>
       </div>
