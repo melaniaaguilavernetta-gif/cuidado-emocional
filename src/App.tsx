@@ -8,7 +8,8 @@ import { Contact } from '../Contact';
 import { Footer } from '../Footer';
 import { ArticleAnsiedad } from './ArticleAnsiedad';
 import { ArticleDialogoInterno } from './ArticleDialogoInterno';
-import { ArticleDependencia } from './ArticleDependencia'; // <-- Aquí importamos el nuevo artículo
+import { ArticleDependencia } from './ArticleDependencia';
+import { ArticleAgorafobia } from './ArticleAgorafobia'; // <-- 1. Importamos el nuevo artículo
 
 export default function App() {
   const path = window.location.pathname;
@@ -38,9 +39,13 @@ export default function App() {
     return <ArticleDialogoInterno />;
   }
 
-  // <-- Aquí añadimos la ruta de tu nuevo artículo
   if (path === '/dependencia') {
     return <ArticleDependencia />;
+  }
+
+  // <-- 2. Añadimos la ruta de tu nuevo artículo
+  if (path === '/agorafobia') {
+    return <ArticleAgorafobia />;
   }
 
   return (
@@ -64,8 +69,16 @@ export default function App() {
             
             <div className="max-w-3xl mx-auto space-y-6"> 
               
-              {/* ARTÍCULO 3: Dependencia Emocional (NUEVO) */}
-              <a href="/dependencia" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
+              {/* 3. ARTÍCULO 4: Agorafobia (NUEVO) */}
+              <a href="/agorafobia" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Fobias y Ansiedad</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">¿Sientes que no puedes alejarte "demasiado" de tu zona de seguridad?</h3>
+                <p className="text-gray-700 mb-4">Descubre cómo la agorafobia se esconde en el miedo a viajar o alejarte, y cómo recuperar tu libertad combinando TCC y PNL.</p>
+                <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
+              </a>
+
+              {/* ARTÍCULO 3: Dependencia Emocional (Pasó a gris) */}
+              <a href="/dependencia" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Relaciones y Dependencia</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Confundir apego con amor: Por qué poner límites no aleja a las personas (te salva a ti)</h3>
                 <p className="text-gray-700 mb-4">Aprende a diferenciar el amor sano de la dependencia emocional y descubre cómo la TCC y la PNL pueden ayudarte a recuperar tu identidad.</p>
