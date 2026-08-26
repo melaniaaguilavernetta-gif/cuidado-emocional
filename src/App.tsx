@@ -18,12 +18,12 @@ import { ArticleEclipseEmocional } from './ArticleEclipseEmocional';
 import { ArticleConvivencia } from './ArticleConvivencia';
 import { ArticleSobrepensar } from './ArticleSobrepensar';
 import { ArticleDepresionSonriente } from './ArticleDepresionSonriente';
-import { ArticleEvitacion } from './ArticleEvitacion'; // <-- Importamos el nuevo artículo
+import { ArticleEvitacion } from './ArticleEvitacion';
+import { ArticlePensamientosIntrusivos } from './ArticlePensamientosIntrusivos'; // <-- Nuevo import
 
 export default function App() {
   const path = window.location.pathname;
 
-  // Esto detecta si venimos del botón del artículo y baja automáticamente al contacto
   useEffect(() => {
     if (path === '/') {
       const shouldScroll = sessionStorage.getItem('scrollToContact');
@@ -39,7 +39,7 @@ export default function App() {
     }
   }, [path]);
 
-  // RUTAS DE TUS ARTÍCULOS
+  // RUTAS DE ARTÍCULOS
   if (path === '/ansiedad-trabajo') return <ArticleAnsiedad />;
   if (path === '/dialogo-interno') return <ArticleDialogoInterno />;
   if (path === '/dependencia') return <ArticleDependencia />;
@@ -52,10 +52,11 @@ export default function App() {
   if (path === '/convivencia') return <ArticleConvivencia />;
   if (path === '/sobrepensar') return <ArticleSobrepensar />;
   if (path === '/depresion-sonriente') return <ArticleDepresionSonriente />;
+  if (path === '/falsos-limites') return <ArticleEvitacion />;
   
-  // <-- Añadimos la nueva ruta
-  if (path === '/falsos-limites') {
-    return <ArticleEvitacion />;
+  // <-- Nueva ruta seria
+  if (path === '/pensamientos-intrusivos') {
+    return <ArticlePensamientosIntrusivos />;
   }
 
   return (
@@ -73,21 +74,29 @@ export default function App() {
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Blog y Recursos</h2>
               <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-                Artículos y herramientas prácticas para tu bienestar emocional.
+                Artículos y herramientas clínicas para tu bienestar emocional.
               </p>
             </div>
             
             <div className="max-w-3xl mx-auto space-y-6"> 
 
-              {/* ARTÍCULO 13: Falsos Límites / Evitación (NUEVO DESTACADO) */}
-              <a href="/falsos-limites" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
+              {/* ARTÍCULO 14: Pensamientos Intrusivos (NUEVO DESTACADO) */}
+              <a href="/pensamientos-intrusivos" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Ansiedad Severa y Fobias</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">Cuando tu propia mente te aterroriza: El sufrimiento de los pensamientos intrusivos</h3>
+                <p className="text-gray-700 mb-4">Descubre por qué la ansiedad severa provoca imágenes mentales aterradoras y cómo usar la defusión cognitiva (TCC) para quitarles el poder.</p>
+                <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
+              </a>
+
+              {/* ARTÍCULO 13: Falsos Límites / Evitación (Pasó a gris) */}
+              <a href="/falsos-limites" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Relaciones y Comunicación</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">La trampa de "cortar por lo sano": Por qué huir del conflicto no es poner límites</h3>
                 <p className="text-gray-700 mb-4">Descubre por qué bloquear o alejarte a la mínima no es autocuidado, sino pura evitación emocional, y cómo entrenar tu comunicación asertiva.</p>
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
               
-              {/* ARTÍCULO 12: Depresión Sonriente (Pasó a gris) */}
+              {/* ARTÍCULO 12: Depresión Sonriente */}
               <a href="/depresion-sonriente" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Bienestar y Emociones</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">El peso de la "depresión sonriente": Cuando fingir que estás bien te deja sin fuerzas</h3>
@@ -187,7 +196,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* SECCIÓN DE CONTACTO CON SU ID */}
+        {/* SECCIÓN DE CONTACTO */}
         <div id="contacto">
           <Contact />
         </div>
