@@ -20,7 +20,8 @@ import { ArticleSobrepensar } from './ArticleSobrepensar';
 import { ArticleDepresionSonriente } from './ArticleDepresionSonriente';
 import { ArticleEvitacion } from './ArticleEvitacion';
 import { ArticlePensamientosIntrusivos } from './ArticlePensamientosIntrusivos';
-import { ArticleAdiccionMovil } from './ArticleAdiccionMovil'; // <-- Nuevo import
+import { ArticleAdiccionMovil } from './ArticleAdiccionMovil';
+import { ArticleInvalidacion } from './ArticleInvalidacion'; // <-- Nuevo import
 
 export default function App() {
   const path = window.location.pathname;
@@ -55,10 +56,11 @@ export default function App() {
   if (path === '/depresion-sonriente') return <ArticleDepresionSonriente />;
   if (path === '/falsos-limites') return <ArticleEvitacion />;
   if (path === '/pensamientos-intrusivos') return <ArticlePensamientosIntrusivos />;
+  if (path === '/adiccion-movil') return <ArticleAdiccionMovil />;
   
   // <-- Nueva ruta
-  if (path === '/adiccion-movil') {
-    return <ArticleAdiccionMovil />;
+  if (path === '/invalidacion-emocional') {
+    return <ArticleInvalidacion />;
   }
 
   return (
@@ -82,15 +84,23 @@ export default function App() {
             
             <div className="max-w-3xl mx-auto space-y-6"> 
 
-              {/* ARTÍCULO 15: Adicción al móvil (NUEVO DESTACADO) */}
-              <a href="/adiccion-movil" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
+              {/* ARTÍCULO 16: Invalidación Emocional (NUEVO DESTACADO) */}
+              <a href="/invalidacion-emocional" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Autoestima y Autoconocimiento</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">El daño de ser "demasiado sensible": Cómo la invalidación emocional destruye tu seguridad</h3>
+                <p className="text-gray-700 mb-4">Descubre qué pasa en tu cerebro cuando te dicen constantemente que "estás exagerando" y cómo volver a confiar en tu criterio con TCC y PNL.</p>
+                <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
+              </a>
+
+              {/* ARTÍCULO 15: Adicción al móvil (Pasó a gris) */}
+              <a href="/adiccion-movil" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Hábitos y Bienestar Digital</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">El "chupete" de los adultos: Por qué usas el móvil para huir de tus propios pensamientos</h3>
                 <p className="text-gray-700 mb-4">Descubre cómo el scroll infinito de las redes sociales actúa como un anestésico temporal y aprende a frenarlo con TCC y PNL.</p>
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
 
-              {/* ARTÍCULO 14: Pensamientos Intrusivos (Pasó a gris) */}
+              {/* ARTÍCULO 14: Pensamientos Intrusivos */}
               <a href="/pensamientos-intrusivos" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Ansiedad Severa y Fobias</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">Cuando tu propia mente te aterroriza: El sufrimiento de los pensamientos intrusivos</h3>
