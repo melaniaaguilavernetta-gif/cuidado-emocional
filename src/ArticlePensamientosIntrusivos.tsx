@@ -13,6 +13,14 @@ export function ArticlePensamientosIntrusivos() {
         'Descubre qué son los pensamientos intrusivos, por qué aparecen con la ansiedad y cómo superarlos con herramientas de TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/pensamientos-intrusivos');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticlePensamientosIntrusivos() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Cuando tu propia mente te aterroriza: El sufrimiento de los pensamientos intrusivos
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 26 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 26 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Existe un nivel de ansiedad del que rara vez se habla en las redes sociales. No es el estrés por el trabajo ni los nervios antes de una reunión. Es un terror profundo, silencioso y paralizante que ocurre en la intimidad de tu propia cabeza: la aparición de pensamientos intrusivos y catastróficos.
@@ -46,7 +54,7 @@ export function ArticlePensamientosIntrusivos() {
           <p>
             Quienes los padecen sufren en soledad por miedo a ser juzgados. Suelen desarrollar conductas de evitación severas (dejar de conducir, esconder los cuchillos, alejarse de sus familiares) por el temor irracional a "perder el control".
           </p>
-          
+
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
             La regla de oro de la psicología clínica en estos casos es rotunda: Tener un pensamiento no equivale a tener el deseo de hacerlo. De hecho, tu mente te asusta con esos escenarios concretos porque son lo que más aborreces en el mundo.
           </blockquote>
@@ -86,7 +94,7 @@ export function ArticlePensamientosIntrusivos() {
             <p className="text-gray-700 mb-6">
               Si estás viviendo este infierno en silencio y sientes que tu propia mente es tu mayor enemiga, en <strong>Cuidado Emocional</strong> encontrarás un espacio clínico, seguro y libre de todo juicio donde tratar este síntoma de raíz.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
