@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleAdiccionMovil() {
+  useEffect(() => {
+    document.title = 'Adicción al móvil y evitación emocional: cómo superarla | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Descubre por qué usamos el móvil para evitar emociones y cómo recuperar el control de tu tiempo con herramientas de TCC y PNL. Terapia en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
