@@ -72,4 +72,28 @@ export function ArticleDialogoInterno() {
 
           <ol className="list-decimal pl-6 space-y-4">
             <li><strong>Pasa el "Filtro del Amigo":</strong> La próxima vez que te sorprendas hablándote mal tras un error, haz una pausa. Escribe lo que te estás diciendo y léelo en voz alta. ¿Se lo dirías a tu mejor amigo/a? Si la respuesta es no, reformula la frase de inmediato con el mismo tono que usarías con esa persona.</li>
-            <li><strong>Cambia el juicio por curiosidad:</strong> En lugar de decir "Qué inútil soy, me he vuelto a equivocar", prueba a decir "Vaya, esto no ha salido como esperaba. ¿Qué ha fallado y qué puedo aprender de esto para la próxima vez?". La curiosidad abre puertas; el juicio las
+            <li><strong>Cambia el juicio por curiosidad:</strong> En lugar de decir "Qué inútil soy, me he vuelto a equivocar", prueba a decir "Vaya, esto no ha salido como esperaba. ¿Qué ha fallado y qué puedo aprender de esto para la próxima vez?". La curiosidad abre puertas; el juicio las cierra.</li>
+            <li><strong>Elimina los absolutos:</strong> Las palabras "siempre", "nunca", "todo" o "nada" son trampas cognitivas. Cambia el "Siempre lo hago mal" por "Hoy he cometido un error específico en esta tarea". Acotar el problema reduce drásticamente la ansiedad.</li>
+          </ol>
+
+          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">No tienes que hacerlo solo/a</h2>
+          <p>Aprender a ser amable con uno mismo cuando llevas años siendo tu peor crítico requiere tiempo, práctica y, a menudo, acompañamiento profesional. Tratarte con autocompasión no significa ser conformista ni dejar de mejorar; significa darte el impulso necesario para avanzar desde la calma y la seguridad, no desde el castigo.</p>
+          
+          <div className="bg-emerald-50 rounded-2xl p-6 mt-8 border-l-4 border-emerald-600">
+            <p className="font-semibold text-gray-900 mb-2">📍 Da el primer paso hacia tu bienestar mental:</p>
+            <p className="mb-4">Si sientes que tu nivel de autoexigencia te está pasando factura y necesitas ayuda para desenredar esos nudos mentales, en Cuidado Emocional tienes un espacio seguro para empezar a hacerlo. Ya sea en mi consulta presencial en Girona o a través de terapia online, estoy aquí para acompañarte a recuperar el control de tu bienestar.</p>
+            <button 
+              onClick={() => {
+                sessionStorage.setItem('scrollToContact', 'true');
+                window.location.href = '/';
+              }}
+              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
+            >
+              Reserva tu sesión hoy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
