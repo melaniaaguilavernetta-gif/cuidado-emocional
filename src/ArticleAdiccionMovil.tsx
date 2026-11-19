@@ -13,6 +13,14 @@ export function ArticleAdiccionMovil() {
         'Descubre por qué usamos el móvil para evitar emociones y cómo recuperar el control de tu tiempo con herramientas de TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/adiccion-movil');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleAdiccionMovil() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             La anestesia de bolsillo: Por qué el móvil es el mayor mecanismo de evitación emocional
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 28 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 28 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Termina el día. Te sientas en el sofá, agotado/a, con la intención de ver una película o simplemente descansar. Pero, sin darte cuenta, tu mano ya ha cogido el móvil. Abres una aplicación, luego otra, deslizas la pantalla sin prestar atención real a nada y, cuando miras el reloj, han pasado 45 minutos. Te sientes más cansado/a que antes y, además, culpable.
@@ -46,7 +54,7 @@ export function ArticleAdiccionMovil() {
           <p>
             Usamos el móvil para no sentir. Lo usamos para anestesiar el aburrimiento, para tapar la ansiedad social, para silenciar la rumiación de nuestros pensamientos y para no enfrentarnos al vacío. Es una vía de escape rápida que nos inyecta pequeñas dosis de dopamina, adormeciendo temporalmente el malestar.
           </p>
-          
+
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
             El problema de anestesiar lo negativo es que también anestesias lo positivo. Pierdes tu capacidad de atención, tu conexión con el momento presente y tu capacidad para disfrutar de las cosas simples sin sobreestimulación.
           </blockquote>
@@ -86,7 +94,7 @@ export function ArticleAdiccionMovil() {
             <p className="text-gray-700 mb-6">
               Si sientes que la necesidad de estar conectado/a te genera ansiedad, insomnio o te desconecta de tu propia vida, en <strong>Cuidado Emocional</strong> podemos ayudarte a reconstruir hábitos saludables y aprender a sostener tus emociones sin huir.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
