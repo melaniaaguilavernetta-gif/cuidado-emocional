@@ -2,15 +2,16 @@ import { ImageWithFallback } from './ImageWithFallback.tsx';
 
 export function About() {
   return (
-    <section id="sobre-mí" className="pt-20 pb-8 bg-gradient-to-b from-white to-emerald-50">
+    <section id="sobre-mi" className="pt-20 pb-8 bg-gradient-to-b from-white to-emerald-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* H2 enriquecido sutilmente para SEO y con fuente en negrita */}
         <h2 className="text-4xl md:text-5xl font-bold text-emerald-800 mb-4">
           Un método de terapia probado y adaptado a ti
         </h2>
         <p className="text-lg text-gray-700 mb-10 max-w-3xl">
-          Cada persona es única, y por eso mi forma de trabajar en las sesiones online también lo es. Integro dos enfoques
-          terapéuticos de eficacia demostrada para ofrecerte el mejor acompañamiento posible, estés donde estés.
+          Cada persona es única, y por eso mi forma de trabajar —tanto en terapia presencial en Girona como en sesiones
+          online— también lo es. Integro dos enfoques terapéuticos de eficacia demostrada para ofrecerte un
+          acompañamiento cercano y a medida, estés en Girona o en cualquier otro lugar.
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
@@ -38,7 +39,7 @@ export function About() {
           <div className="rounded-2xl overflow-hidden shadow-2xl">
             <ImageWithFallback
               src="https://images.unsplash.com/photo-1745092800886-f3a20d0b0065?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0dXJxdW9pc2UlMjBvY2VhbiUyMGJlYWNoJTIwdHJvcGljYWwlMjBjYWxtfGVufDF8fHx8MTc3Mjc5NTAwOHww&ixlib=rb-4.1.0&q=60&w=1080&utm_source=figma&utm_medium=referral"
-              alt="Espacio de meditación y paz"
+              alt="Agua turquesa serena en una playa tranquila que evoca calma y equilibrio emocional"
               className="w-full h-full object-cover"
               loading="lazy"
             />
