@@ -13,6 +13,14 @@ export function ArticleConvivencia() {
         'Por qué pedir espacio en vacaciones mejora tu relación de pareja y familia. Aprende a poner límites sin culpa con TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/convivencia');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleConvivencia() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             La sobredosis de convivencia: Por qué pedir espacio en vacaciones no significa quererse menos
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 14 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 14 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Llegamos al esperado mes de agosto con una lista infinita de ilusiones. Pasamos todo el invierno quejándonos de que apenas vemos a nuestra pareja, a nuestros hijos o a nuestros amigos por culpa del trabajo, así que cuando llegan las vacaciones, decretamos de forma inconsciente una norma muy peligrosa: <strong>vamos a aprovechar el tiempo haciéndolo absolutamente todo juntos.</strong>
@@ -76,7 +84,7 @@ export function ArticleConvivencia() {
             Tus vacaciones son para descansar (también de los demás)
           </p>
           <p>
-            No esperes a estar al límite de tu paciencia para reclamar tu espacio. Atrévete a soltar la presión de las vacaciones perfectas y prioriza tu paz mental. 
+            No esperes a estar al límite de tu paciencia para reclamar tu espacio. Atrévete a soltar la presión de las vacaciones perfectas y prioriza tu paz mental.
           </p>
 
           <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10">
@@ -86,7 +94,7 @@ export function ArticleConvivencia() {
             <p className="text-gray-700 mb-6">
               Si sientes que la falta de límites y la dificultad para ser asertivo/a te están pasando factura en tus relaciones, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) podemos trabajar juntos para recuperar tu equilibrio.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
