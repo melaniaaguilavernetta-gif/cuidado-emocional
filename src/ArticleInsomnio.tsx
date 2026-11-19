@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleInsomnio() {
+  useEffect(() => {
+    document.title = 'Insomnio y ansiedad nocturna: cómo dormir mejor | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Descubre por qué se activa la ansiedad nocturna al acostarte y cómo superar el insomnio con herramientas de TCC y PNL. Terapia presencial en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
