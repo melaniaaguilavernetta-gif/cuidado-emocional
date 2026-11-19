@@ -13,6 +13,14 @@ export function ArticleDependencia() {
         'Descubre las señales de la dependencia emocional en pareja y cómo construir relaciones sanas con TCC y PNL. Terapia presencial en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/dependencia');
   }, []);
 
   return (
@@ -26,7 +34,7 @@ export function ArticleDependencia() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Dependencia emocional: Cuando amar duele más que estar solo/a
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 2 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 2 Agosto 2026</p>
         </div>
 
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
