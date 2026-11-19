@@ -4,13 +4,13 @@ import { Footer } from '../Footer';
 
 export function ArticleDependencia() {
   useEffect(() => {
-    document.title = 'Dependencia emocional: cómo poner límites y superarla | Cuidado Emocional';
+    document.title = 'Dependencia emocional: señales y cómo superarla | Cuidado Emocional';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Aprende a diferenciar apego de amor sano y a poner límites sin miedo al abandono con TCC y PNL. Terapia para la dependencia emocional en Girona y online.'
+        'Descubre las señales de la dependencia emocional en pareja y cómo construir relaciones sanas con TCC y PNL. Terapia presencial en Girona y online.'
       );
     }
   }, []);
@@ -19,89 +19,86 @@ export function ArticleDependencia() {
     <div className="min-h-screen bg-gray-50">
       <Header />
       <main className="pt-32 pb-20 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 bg-white shadow-sm mt-8 mb-12 rounded-2xl">
-        
-        {/* Cabecera del artículo */}
         <div className="mb-10 border-b border-gray-100 pb-8">
           <p className="text-emerald-600 font-semibold mb-3 tracking-wide uppercase text-sm">
-            Relaciones y Dependencia
+            Relaciones y Vínculos
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Confundir apego con amor: Por qué poner límites no aleja a las personas (te salva a ti)
+            Dependencia emocional: Cuando amar duele más que estar solo/a
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 3 Agosto 2026</p>
+          <p className="text-gray-500 text-sm">Por Melania • 2 Agosto 2026</p>
         </div>
-        
-        {/* Contenido principal */}
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
-            Desde que somos pequeños, la cultura, el cine y la literatura nos han vendido una idea muy distorsionada de lo que significa amar. Nos han hecho creer que el amor verdadero requiere sacrificio absoluto, que "darlo todo" es la máxima prueba de afecto y que somos "la mitad" de alguien esperando ser completados.
+            En una relación sana, el otro suma, acompaña y enriquece tu vida, pero no es el oxígeno que necesitas para respirar. En la <strong>dependencia emocional</strong>, el vínculo deja de ser un espacio de encuentro y se convierte en una necesidad angustiosa de no perder al otro.
           </p>
           <p>
-            Bajo este marco tan peligroso, es muy fácil cruzar la fina línea que separa el amor sano de la dependencia emocional.
+            Muchas veces confundimos dependencia con amor profundo. Creemos que sufrir por miedo al abandono, aguantar faltas de respeto o anularnos por complacer significa querer mucho, cuando en realidad es señal de que tu seguridad interna está puesta en manos de otra persona.
           </p>
 
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
-            ¿Qué es exactamente la dependencia emocional?
+            Señales frecuentes de dependencia emocional
           </h2>
-          <p>
-            La dependencia emocional ocurre cuando tu bienestar, tu estado de ánimo y tu identidad quedan subordinados a otra persona. Ya no actúas en base a lo que tú quieres o necesitas, sino en base a lo que crees que la otra persona espera de ti, movido/a por un miedo profundo al abandono o al conflicto.
-          </p>
-          <p>Las señales de alarma suelen ser silenciosas al principio:</p>
-          
-          <ul className="list-disc pl-6 space-y-2">
-            <li><strong>Pérdida de identidad:</strong> Dejas de lado tus hobbies, tus amistades y tus intereses para mimetizarte con los de tu pareja o entorno.</li>
-            <li><strong>Miedo atroz a decir "NO":</strong> Aceptas planes que no quieres hacer o toleras faltas de respeto porque el pánico a que la otra persona se enfade o se aleje te paraliza.</li>
-            <li><strong>Ansiedad constante:</strong> Tu tranquilidad depende de cómo te hayan hablado hoy, de cuánto hayan tardado en contestar un mensaje o del tono de voz de la otra persona.</li>
-          </ul>
-          
-          <p className="font-medium text-gray-900 italic mt-6">
-            Cuando llegas a este punto, la frase que más resuena en tu cabeza (y que escucho a menudo en mi consulta en Girona) es: "Ya no sé quién soy".
-          </p>
-
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
-            Poner límites: El gran mito del abandono
-          </h2>
-          <p>
-            El mayor freno para salir de la dependencia emocional es una creencia irracional muy concreta: <em>"Si digo lo que pienso, si pongo un límite o digo que algo me molesta, dejarán de quererme y me quedaré solo/a"</em>.
-          </p>
-          <p>
-            Aquí es donde entra la magia de la Terapia Cognitivo-Conductual (TCC). En Cuidado Emocional trabajamos para desmontar esa creencia. Te ayudaré a entender una verdad fundamental: <strong>poner límites no aleja a las personas que te quieren de verdad; solo aleja a aquellas personas que se estaban beneficiando de que tú no tuvieras límites.</strong>
-          </p>
-          <p>
-            Quien te quiere sano, respeta tus "noes". Quien quiere controlarte, se ofende ante ellos.
-          </p>
-
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
-            Cómo te ayuda la TCC y la PNL a recuperar tu centro
-          </h2>
-          <p>
-            Salir de la dependencia emocional no se logra simplemente "queriéndose más", requiere de un trabajo estructurado para reprogramar cómo nos relacionamos con nosotros mismos y con los demás.
-          </p>
-          
-          <ul className="list-disc pl-6 space-y-4">
-            <li><strong>Con la TCC:</strong> Identificamos las heridas de apego y las creencias de falta de valía ("no soy suficiente", "nadie me va a querer si no soy útil"). Aprendemos a gestionar la ansiedad que aparece cuando no intentas complacer al otro, tolerando esa incomodidad hasta que desaparece.</li>
-            <li><strong>Con la PNL:</strong> Reprogramamos tu diálogo interno. Cambiamos el "Le necesito para ser feliz" por el "Elijo compartir mi vida contigo, pero soy una persona completa sin ti". Utilizamos técnicas de anclaje para conectarte con tus propios recursos de seguridad y autoestima en momentos de duda.</li>
+          <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <li><strong>Miedo intenso al rechazo o al abandono:</strong> Cualquier distancia, silencio o cambio de tono dispara una alarma interna desproporcionada.</li>
+            <li><strong>Prioridad absoluta al otro:</strong> Dejas de lado tus planes, amistades, aficiones o necesidades con tal de no generar conflicto o decepcionar.</li>
+            <li><strong>Idealización de la pareja:</strong> Justificas conductas dañinas o minimizas lo que te duele para mantener el vínculo a toda costa.</li>
+            <li><strong>Estado de ánimo en montaña rusa:</strong> Tu bienestar del día depende de cómo te haya respondido o tratado la otra persona.</li>
           </ul>
 
+          <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
+            Cuando tu autoestima depende de la validación externa, cualquier señal de frialdad se siente como una amenaza vital. Recuperar tu centro no significa dejar de querer, sino volver a ocuparte de ti.
+          </blockquote>
+
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
-            El amor sano no te exige que te anules
+            Cómo construir vínculos más sanos con TCC y PNL
           </h2>
           <p>
-            No tienes que vaciarte para que alguien decida quedarse a tu lado. Una relación sana (ya sea de pareja, de amistad e incluso familiar) es un lugar donde sumas, no donde te restan personalidad.
-          </p>
-          <p>
-            Si sientes que el miedo a perder a alguien te está haciendo perderte a ti mismo/a, no tienes que transitar este camino en soledad.
+            Superar la dependencia emocional pasa por fortalecer tu base interna y aprender a relacionarte desde la libertad y no desde el miedo:
           </p>
 
-          {/* Call to Action (Reserva de sesión) */}
-          <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10">
-            <p className="font-semibold text-gray-900 mb-2 text-xl">📍 En Cuidado Emocional (presencial en Girona u Online)</p>
-            <p className="mb-6 text-gray-700">
-              Tienes un espacio seguro, libre de juicios, para empezar a reconstruir tu identidad y aprender a relacionarte desde la libertad, no desde el miedo. Da el primer paso para volver a ser tú.
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            1. Cuestionar creencias de carencia (TCC)
+          </h3>
+          <p>
+            Con la Terapia Cognitivo-Conductual identificamos pensamientos automáticos como <em>"No voy a poder soportarlo"</em> o <em>"Si no estoy con esta persona, me quedaré vacío/a"</em>. Revisar estas ideas con evidencia y construir límites claros reduce el pánico a la soledad.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            2. Fortalecer tu autonomía emocional (PNL)
+          </h3>
+          <p>
+            A través de la Programación Neurolingüística trabajamos para reconectar con tu identidad, tus recursos propios y tu capacidad de calmar tus emociones sin depender de la reacción inmediata del otro.
+          </p>
+
+          <p className="font-medium text-gray-900 mt-8 text-xl">
+            Aprender a estar contigo sin miedo
+          </p>
+          <p>
+            Estar bien a solas y poner límites no rompe lo que es sano; protege tu dignidad y permite que cualquier vínculo crezca sobre bases más equilibradas.
+          </p>
+
+          <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10 shadow-sm">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              Da el primer paso hacia relaciones más equilibradas
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Si sientes que el miedo a perder a alguien te lleva a aguantar más de la cuenta o a vivir en tensión constante, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) tienes un espacio seguro para trabajarlo.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
               }}
-              className="inline-block bg-emerald-600 text-white
+              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
+            >
+              Reserva tu sesión hoy
+            </button>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
