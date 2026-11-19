@@ -43,7 +43,7 @@ export function Benefits() {
                     <div>
                       {/* H3 con fuente en negrita suave (font-semibold) */}
                       <h3 className="text-xl font-semibold mb-2 text-gray-900">{benefit.title}</h3>
-                      <p className="text-gray-600">{benefit.description}</p>
+                      <p className="text-gray-700">{benefit.description}</p>
                     </div>
                   </div>
                 );
@@ -54,17 +54,18 @@ export function Benefits() {
           <div className="order-1 md:order-2">
             {/* H2 enriquecido para SEO y con fuente en negrita (font-bold) */}
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              ¿Por qué elegir mi acompañamiento online?
+              ¿Por qué elegir mi terapia en Girona y online?
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              Me comprometo a ofrecerte un acompañamiento profesional, cálido y efectivo que combina
-              la solidez de la ciencia con técnicas orientadas al cambio rápido y profundo.
+              Me comprometo a ofrecerte un acompañamiento profesional, cálido y efectivo —tanto en sesiones
+              presenciales en Girona como online— que combina la solidez de la ciencia con técnicas orientadas al cambio
+              rápido y profundo.
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1597824295725-3bc5dc49f4e1?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmVlbiUyMHBsYW50cyUyMGdyb3d0aCUyMG1pbmRmdWxuZXNzfGVufDF8fHx8MTc3Mjc5MzYzNHww&ixlib=rb-4.1.0&q=60&w=800&utm_source=figma&utm_medium=referral"
-                  alt="Apoyo empático"
+                  alt="Brotes verdes en crecimiento que simbolizan calma y bienestar emocional"
                   className="w-full h-48 object-cover"
                   loading="lazy"
                 />
@@ -72,7 +73,7 @@ export function Benefits() {
               <div className="rounded-xl overflow-hidden shadow-lg">
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1759513332004-c264d9231152?crop=entropy&cs=tinysrgb&fit=max&fm=webp&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdW5yaXNlJTIwaG9wZSUyMHBlYWNlZnVsJTIwbW9ybmluZ3xlbnwxfHx8fDE3NzI3OTM2MzR8MA&ixlib=rb-4.1.0&q=60&w=800&utm_source=figma&utm_medium=referral"
-                  alt="Crecimiento personal"
+                  alt="Amanecer sereno en el horizonte que representa claridad y avance personal"
                   className="w-full h-48 object-cover"
                   loading="lazy"
                 />
