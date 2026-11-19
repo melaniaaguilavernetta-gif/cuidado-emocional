@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleDependencia() {
+  useEffect(() => {
+    document.title = 'Dependencia emocional: cómo poner límites y superarla | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Aprende a diferenciar apego de amor sano y a poner límites sin miedo al abandono con TCC y PNL. Terapia para la dependencia emocional en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -91,15 +104,4 @@ export function ArticleDependencia() {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
               }}
-              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
-            >
-              Reserva tu sesión hoy
-            </button>
-          </div>
-          
-        </div>
-      </main>
-      <Footer />
-    </div>
-  );
-}
+              className="inline-block bg-emerald-600 text-white
