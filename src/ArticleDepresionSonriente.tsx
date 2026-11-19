@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleDepresionSonriente() {
+  useEffect(() => {
+    document.title = 'Depresión sonriente: qué es y cómo superarla | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Descubre qué es la depresión sonriente o de alto funcionamiento y cómo dejar de fingir que estás bien con TCC y PNL. Terapia en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
