@@ -1,15 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
+
   <!-- Tu página principal -->
   <url>
     <loc>https://www.cuidadoemocional.com/</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Tu nuevo artículo sobre ansiedad -->
+
+  <!-- Artículo 18: Vivienda y Salud Mental -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/precariedad-vivienda</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 17: Maltrato Psicológico -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/maltrato-psicologico</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 16: Invalidación Emocional -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/invalidacion-emocional</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 15: Adicción al Móvil -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/adiccion-movil</loc>
+    <lastmod>2026-08-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 14: Pensamientos Intrusivos -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/pensamientos-intrusivos</loc>
+    <lastmod>2026-08-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 13: Evitación / Falsos Límites -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/falsos-limites</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 12: Depresión Sonriente -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/depresion-sonriente</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 11: Sobrepensar -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/sobrepensar</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 10: Convivencia -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/convivencia</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 9: Eclipse Emocional -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/eclipse-emocional</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 8: Somatización -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/somatizacion</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 7: Miedo al Cambio -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/miedo-cambio</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 6: Insomnio -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/insomnio</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 5: Presión Estética -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/presion-estetica</loc>
+    <lastmod>2026-08-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 4: Agorafobia -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/agorafobia</loc>
+    <lastmod>2026-08-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 3: Dependencia Emocional -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/dependencia</loc>
+    <lastmod>2026-08-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 2: Diálogo Interno -->
+  <url>
+    <loc>https://www.cuidadoemocional.com/dialogo-interno</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artículo 1: Ansiedad en el trabajo -->
   <url>
     <loc>https://www.cuidadoemocional.com/ansiedad-trabajo</loc>
     <lastmod>2026-07-30</lastmod>
