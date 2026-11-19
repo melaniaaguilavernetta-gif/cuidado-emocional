@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleAnsiedad() {
+  useEffect(() => {
+    document.title = 'Cómo calmar la ansiedad en el trabajo | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Aprende a calmar la ansiedad laboral con herramientas prácticas de gestión emocional y TCC. Terapia presencial en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
