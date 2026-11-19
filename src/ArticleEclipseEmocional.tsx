@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleEclipseEmocional() {
+  useEffect(() => {
+    document.title = 'Eclipse emocional: cómo recuperar la claridad ante la ansiedad | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Descubre qué es el eclipse emocional y cómo despejar la ansiedad y el estrés crónico con herramientas de TCC y PNL. Terapia presencial en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -28,67 +41,4 @@ export function ArticleEclipseEmocional() {
             ¿Qué es un Eclipse Emocional?
           </h2>
           <p>
-            Un eclipse emocional ocurre cuando tus miedos, la ansiedad, o una racha de estrés crónico se interponen entre tú y tu verdadera esencia. De repente, dejas de ver todo lo bueno que hay en ti. 
-          </p>
-          
-          <ul className="list-disc pl-6 space-y-2 text-gray-700">
-            <li>Tu <strong>juez interno</strong> toma el control y oculta tus logros (el famoso Síndrome del Impostor).</li>
-            <li>La <strong>ansiedad</strong> nubla tu capacidad de tomar decisiones lógicas.</li>
-            <li>El <strong>estrés</strong> oscurece tu paciencia y tu empatía con los demás.</li>
-          </ul>
-
-          <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
-            El mayor peligro del eclipse emocional no es la oscuridad en sí, sino <strong>creer que ese estado es permanente</strong>. Cuando estás en medio de una crisis, tu cerebro te convence de que esa sombra es tu nueva realidad y de que nunca volverás a sentirte bien.
-          </blockquote>
-
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
-            Cómo despejar la sombra con TCC y PNL
-          </h2>
-          <p>
-            Al igual que en la astronomía, no podemos evitar que a veces las cosas se alineen de forma compleja en nuestra vida. Pero a diferencia de los planetas, nosotros sí tenemos el poder de mover la sombra mucho más rápido si utilizamos las herramientas adecuadas.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            1. Identifica la sombra (Terapia Cognitivo-Conductual)
-          </h3>
-          <p>
-            El primer paso es usar la TCC para encender la luz de la lógica. Cuando te sientas "eclipsado/a", cuestiona tus pensamientos. Si tu mente te dice <em>"Todo me sale mal, soy un desastre"</em>, busca pruebas objetivas. Verás que esa afirmación es solo una distorsión cognitiva (una sombra), no una verdad absoluta.
-          </p>
-
-          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            2. Cambia el lenguaje del miedo (PNL)
-          </h3>
-          <p>
-            A través de la Programación Neurolingüística, modificamos cómo te comunicas contigo mismo/a durante la crisis. Pasamos del <em>"estoy atrapado en esto"</em> al <em>"estoy atravesando una fase de estrés temporal"</em>. La palabra "atravesar" le indica a tu sistema nervioso que hay movimiento y que la luz volverá.
-          </p>
-
-          <p className="font-medium text-gray-900 mt-8 text-xl">
-            Tu esencia sigue intacta
-          </p>
-          <p>
-            La próxima vez que sientas que la tristeza, el miedo o la ansiedad lo cubren todo, recuerda la metáfora del eclipse. Tus capacidades, tu valía y tu capacidad de estar en calma siguen exactamente en el mismo sitio. Solo tienes que esperar a que pase la sombra, o mejor aún, aprender a despejarla.
-          </p>
-
-          <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
-              Recupera tu claridad emocional
-            </h2>
-            <p className="text-gray-700 mb-6">
-              Si sientes que llevas demasiado tiempo en la sombra de la ansiedad o el autosabotaje, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) tienes las herramientas para volver a brillar.
-            </p>
-            <button 
-              onClick={() => {
-                sessionStorage.setItem('scrollToContact', 'true');
-                window.location.href = '/';
-              }}
-              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
-            >
-              Reserva tu sesión hoy
-            </button>
-          </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
-  );
-}
+            Un eclipse emocional ocurre cuando tus miedos, la ansiedad, o
