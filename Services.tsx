@@ -13,20 +13,20 @@ const forWhom = [
 const services = [
   {
     icon: Brain,
-    title: 'Terapia Cognitivo-Conductual',
+    title: 'Terapia Cognitivo-Conductual (TCC)',
     description: 'Identificamos juntos patrones de pensamiento que te limitan y los transformamos en recursos para tu bienestar con técnicas de eficacia científicamente demostrada.',
     color: 'bg-emerald-100 text-emerald-700',
   },
   {
     icon: Zap,
-    title: 'Programación Neurolingüística',
+    title: 'Programación Neurolingüística (PNL)',
     description: 'Trabajamos con el lenguaje de tu mente para reprogramar respuestas automáticas, superar miedos y potenciar tu comunicación contigo y con los demás.',
     color: 'bg-teal-100 text-teal-700',
   },
   {
     icon: Video,
-    title: 'Sesiones Online y Presenciales',
-    description: 'Flexibilidad total para adaptarme a tu vida. Puedes elegir el formato que mejor se adapte a tus circunstancias y preferencias.',
+    title: 'Terapia Online y Presencial en Girona',
+    description: 'Flexibilidad total para adaptarme a tu vida, tanto en sesiones presenciales en Girona como en terapia online desde donde estés.',
     color: 'bg-green-100 text-green-700',
   },
   {
@@ -76,9 +76,9 @@ export function Services() {
       <section id="servicios" className="pt-8 pb-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">Mis Servicios</h2>
+            <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">Mis Servicios de Terapia en Girona y Online</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Ofrezco un acompañamiento integral adaptado a tus necesidades,
+              Ofrezco un acompañamiento integral con TCC y PNL adaptado a tus necesidades,
               con compromiso total hacia tu bienestar
             </p>
           </div>
