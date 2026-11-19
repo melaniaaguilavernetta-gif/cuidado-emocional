@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleVivienda() {
+  useEffect(() => {
+    document.title = 'El impacto psicológico de la vivienda y la ansiedad | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Cómo afecta la precariedad de la vivienda a tu salud mental y cómo gestionar la ansiedad y el estrés crónico con TCC y PNL. Terapia en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
