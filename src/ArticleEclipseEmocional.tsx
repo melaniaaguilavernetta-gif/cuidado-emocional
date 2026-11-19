@@ -41,4 +41,64 @@ export function ArticleEclipseEmocional() {
             ¿Qué es un Eclipse Emocional?
           </h2>
           <p>
-            Un eclipse emocional ocurre cuando tus miedos, la ansiedad, o
+            Un eclipse emocional ocurre cuando tus miedos, la ansiedad, la tristeza o una etapa de estrés intenso se interponen entre tú y tu claridad mental. De repente, sientes que has perdido el rumbo, que tu autoestima se ha apagado o que ya no eres la persona segura y capaz que eras antes.
+          </p>
+          <p>
+            Cuando estás dentro de ese eclipse, todo parece más oscuro, más difícil y más definitivo de lo que realmente es. Tu mente tiende a generalizar y a convencerte de que ese malestar es permanente.
+          </p>
+
+          <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
+            Al igual que ocurre con la luna, estar atravesando un momento difícil no significa que hayas perdido tus recursos, tu valía o tu luz. Simplemente hay una sombra temporal tapándola.
+          </blockquote>
+
+          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
+            Cómo atravesar la sombra con TCC y PNL
+          </h2>
+          <p>
+            Querer que el eclipse desaparezca a la fuerza suele aumentar la frustración. La clave está en aprender a transitar el momento con herramientas que te ayuden a recuperar la perspectiva:
+          </p>
+
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            1. Separar el síntoma de tu identidad (TCC)
+          </h3>
+          <p>
+            Desde la Terapia Cognitivo-Conductual, trabajamos para que no te conviertas en tu ansiedad o en tu tristeza. Una cosa es sentir angustia hoy y otra muy distinta creerte que eres una persona rota o incapaz. Cuestionar esos pensamientos catastróficos devuelve objetividad a tu mente.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            2. Reconectar con tus recursos (PNL)
+          </h3>
+          <p>
+            Con la Programación Neurolingüística (PNL), recordamos y activamos momentos pasados en los que sí supiste resolver dificultades. Volver a conectar con esos recursos internos ayuda a que la sombra no ocupe todo tu campo de visión.
+          </p>
+
+          <p className="font-medium text-gray-900 mt-8 text-xl">
+            La sombra siempre pasa
+          </p>
+          <p>
+            No necesitas tener todas las respuestas hoy ni obligarte a estar bien de golpe. Solo necesitas recordar que lo que sientes ahora es temporal y que puedes pedir apoyo para atravesarlo con mayor calma.
+          </p>
+
+          <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10 shadow-sm">
+            <h2 className="text-2xl font-bold text-gray-900 mb-3">
+              Recupera tu claridad emocional
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Si sientes que una nube de ansiedad o cansancio te está impidiendo ver con claridad, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) podemos acompañarte paso a paso para recuperar tu estabilidad.
+            </p>
+            <button 
+              onClick={() => {
+                sessionStorage.setItem('scrollToContact', 'true');
+                window.location.href = '/';
+              }}
+              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
+            >
+              Reserva tu sesión hoy
+            </button>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
