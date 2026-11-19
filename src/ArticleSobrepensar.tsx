@@ -13,6 +13,14 @@ export function ArticleSobrepensar() {
         'Descubre por qué caes en el bucle de sobrepensar y cómo salir de la rumiación mental con TCC y PNL. Terapia presencial en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/sobrepensar');
   }, []);
 
   return (
@@ -26,7 +34,7 @@ export function ArticleSobrepensar() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             El bucle de sobrepensar: Cuando analizarlo todo te agota en lugar de darte respuestas
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 18 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 18 Agosto 2026</p>
         </div>
 
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
