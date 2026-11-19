@@ -13,6 +13,14 @@ export function ArticleAnsiedad() {
         'Aprende a calmar la ansiedad laboral con herramientas prácticas de gestión emocional y TCC. Terapia presencial en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/ansiedad-trabajo');
   }, []);
 
   return (
@@ -26,29 +34,64 @@ export function ArticleAnsiedad() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Cómo calmar la ansiedad en el trabajo: 5 técnicas prácticas
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 30 Julio 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 30 Julio 2026</p>
         </div>
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             ¿Sientes un nudo en el estómago cada domingo por la tarde al pensar en la oficina?
           </p>
           <p>
-            En este artículo te enseño cómo calmar la ansiedad en el trabajo usando herramientas de gestión emocional y Terapia Cognitivo-Conductual (TCC) que puedes aplicar sin moverte de tu silla.
+            En este artículo te enseño cómo calmar la ansiedad en el trabajo usando herramientas de gestión emocional, Terapia Cognitivo-Conductual (TCC) y Programación Neurolingüística (PNL) que puedes aplicar sin moverte de tu silla.
           </p>
+
           <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
             Técnicas para gestionar la ansiedad
           </h2>
+
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
             1. La respiración táctica o de "caja"
           </h3>
           <p>
-            Consiste en inhalar durante 4 segundos, aguantar 4 segundos, exhalar en 4 y mantener los pulmones vacíos otros 4. Repite este ciclo 5 veces.
+            Consiste en inhalar durante 4 segundos, aguantar 4 segundos, exhalar en 4 y mantener los pulmones vacíos otros 4. Repite este ciclo 5 veces para bajar la activación fisiológica cuando notes presión en el pecho o aceleración.
           </p>
+
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            2. Descarga mental en dos columnas (TCC)
+          </h3>
+          <p>
+            Cuando el correo y las urgencias te saturan, anota en una columna lo que te preocupa y en la otra qué acción concreta depende de ti en los próximos 30 minutos. Separar hechos de suposiciones reduce el bloqueo.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            3. Anclaje de calma antes de una reunión (PNL)
+          </h3>
+          <p>
+            Haz una pausa de 10 segundos antes de entrar a una llamada o reunión tensa, apoya ambos pies en el suelo y asocia una postura erguida y tranquila con un momento previo en el que resolviste un reto con solvencia.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            4. Poner límites realistas en los plazos
+          </h3>
+          <p>
+            La ansiedad laboral suele dispararse al aceptar todo como urgente. Reformular un <em>"no llego"</em> por una propuesta clara de prioridades y tiempos protege tu energía sin perder profesionalidad.
+          </p>
+
+          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
+            5. Corte ritualizado de la jornada
+          </h3>
+          <p>
+            Para no llevarte la oficina a casa o arruinarte el domingo, cierra pestañas, anota en tres líneas qué queda pendiente para mañana y haz una transición física breve (un paseo, cambiarte de ropa o desconectar notificaciones) que marque el fin del turno.
+          </p>
+
           <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Da el primer paso hacia tu bienestar
             </h2>
-            <button 
+            <p className="text-gray-700 mb-6">
+              Si el estrés o la presión laboral te acompañan cada día, en <strong>Cuidado Emocional</strong> (presencial en Girona y online) podemos trabajar herramientas de TCC y PNL adaptadas a tu ritmo.
+            </p>
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
