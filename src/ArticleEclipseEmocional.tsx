@@ -4,13 +4,13 @@ import { Footer } from '../Footer';
 
 export function ArticleEclipseEmocional() {
   useEffect(() => {
-    document.title = 'Eclipse emocional: cómo recuperar la claridad ante la ansiedad | Cuidado Emocional';
+    document.title = 'Eclipse emocional: qué es y cómo recuperar tu claridad | Cuidado Emocional';
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         'content',
-        'Descubre qué es el eclipse emocional y cómo despejar la ansiedad y el estrés crónico con herramientas de TCC y PNL. Terapia presencial en Girona y online.'
+        'Descubre qué es un eclipse emocional, por qué el miedo y la ansiedad nublan tu bienestar y cómo gestionarlo con TCC y PNL. Terapia en Girona y online.'
       );
     }
   }, []);
