@@ -13,6 +13,14 @@ export function ArticleEclipseEmocional() {
         'Descubre qué es un eclipse emocional, por qué el miedo y la ansiedad nublan tu bienestar y cómo gestionarlo con TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/eclipse-emocional');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleEclipseEmocional() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             El "Eclipse Emocional": Qué hacer cuando la ansiedad oculta tu claridad
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 12 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 12 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Un eclipse lunar es uno de los fenómenos más fascinantes que podemos observar. Durante unas horas, la sombra de la Tierra se interpone en el camino de la luz, dejando a la luna en la oscuridad. Sin embargo, todos sabemos una gran verdad: <strong>la luna no ha desaparecido, ni ha perdido su capacidad de brillar.</strong> Solo está temporalmente oculta.
@@ -86,7 +94,7 @@ export function ArticleEclipseEmocional() {
             <p className="text-gray-700 mb-6">
               Si sientes que una nube de ansiedad o cansancio te está impidiendo ver con claridad, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) podemos acompañarte paso a paso para recuperar tu estabilidad.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
