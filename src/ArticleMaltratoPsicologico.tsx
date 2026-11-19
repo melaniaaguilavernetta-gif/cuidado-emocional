@@ -13,6 +13,14 @@ export function ArticleMaltratoPsicologico() {
         'Aprende a identificar las señales del maltrato psicológico y abuso emocional, y descubre cómo reconstruir tu identidad con TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/maltrato-psicologico');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleMaltratoPsicologico() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             El maltrato invisible: Cuando las heridas no se ven pero destruyen tu identidad
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 2 Septiembre 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 2 Septiembre 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Existe un gran mito en nuestra sociedad: creer que el maltrato solo es real si hay gritos ensordecedores o violencia física. Esta creencia es profundamente peligrosa porque invisibiliza a miles de personas que sufren <strong>abuso emocional y psicológico</strong> a diario, convenciéndolas de que "no tienen derecho a quejarse".
@@ -46,7 +54,7 @@ export function ArticleMaltratoPsicologico() {
             <li><strong>Aislamiento sutil:</strong> Critican a tus amigos o familiares hasta que, para evitar conflictos, decides dejar de verlos.</li>
             <li><strong>Humillación disfrazada:</strong> Hacen comentarios crueles sobre tu cuerpo o tus capacidades y, si te enfadas, responden que <em>"solo era una broma"</em> y que <em>"no tienes sentido del humor"</em>.</li>
           </ul>
-          
+
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
             El mayor triunfo del maltrato psicológico es hacerte creer que tú eres el culpable de la situación. Tu cerebro, agotado por caminar sobre cáscaras de huevo, asume que si fueras "mejor", el abuso se detendría.
           </blockquote>
@@ -86,7 +94,7 @@ export function ArticleMaltratoPsicologico() {
             <p className="text-gray-700 mb-6">
               Si te reconoces en estas líneas y necesitas ayuda para salir del bucle de la culpa y el miedo, en <strong>Cuidado Emocional</strong> te ofrecemos apoyo clínico sin juicios.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
