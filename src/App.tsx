@@ -1,22 +1,77 @@
-// ... [Mismos imports de antes] ...
+import { useEffect } from 'react';
+import { Header } from '../Header';
+import { Hero } from '../Hero';
+import { About } from '../About';
+import { Services } from '../Services';
+import { Benefits } from '../Benefits';
+import { Contact } from '../Contact';
+import { Footer } from '../Footer';
+import { ArticleAnsiedad } from './ArticleAnsiedad';
+import { ArticleDialogoInterno } from './ArticleDialogoInterno';
+import { ArticleDependencia } from './ArticleDependencia';
+import { ArticleAgorafobia } from './ArticleAgorafobia';
+import { ArticlePresionEstetica } from './ArticlePresionEstetica'; 
+import { ArticleInsomnio } from './ArticleInsomnio';
+import { ArticleMiedoCambio } from './ArticleMiedoCambio';
+import { ArticleSomatizacion } from './ArticleSomatizacion';
+import { ArticleEclipseEmocional } from './ArticleEclipseEmocional';
+import { ArticleConvivencia } from './ArticleConvivencia';
+import { ArticleSobrepensar } from './ArticleSobrepensar';
+import { ArticleDepresionSonriente } from './ArticleDepresionSonriente';
+import { ArticleEvitacion } from './ArticleEvitacion';
+import { ArticlePensamientosIntrusivos } from './ArticlePensamientosIntrusivos';
+import { ArticleAdiccionMovil } from './ArticleAdiccionMovil';
 import { ArticleInvalidacion } from './ArticleInvalidacion';
 import { ArticleMaltratoPsicologico } from './ArticleMaltratoPsicologico';
-import { ArticleVivienda } from './ArticleVivienda'; // <-- Nuevo import
+import { ArticleVivienda } from './ArticleVivienda';
 
 export default function App() {
   const path = window.location.pathname;
 
-  // ... [El mismo código del useEffect] ...
+  useEffect(() => {
+    if (path === '/' || path === '') {
+      document.title = 'Cuidado Emocional | Terapeuta en Girona y Terapia Online (TCC y PNL)';
+
+      const metaDesc = document.querySelector('meta[name="description"]');
+      if (metaDesc) {
+        metaDesc.setAttribute(
+          'content',
+          'Terapia presencial en Girona y online con enfoque en Terapia Cognitivo-Conductual (TCC) y PNL. Gestión de ansiedad, autoestima, dependencia emocional y estrés.'
+        );
+      }
+
+      const shouldScroll = sessionStorage.getItem('scrollToContact');
+      if (shouldScroll === 'true') {
+        sessionStorage.removeItem('scrollToContact');
+        setTimeout(() => {
+          const contactElement = document.getElementById('contacto');
+          if (contactElement) {
+            contactElement.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 200);
+      }
+    }
+  }, [path]);
 
   // RUTAS DE ARTÍCULOS
   if (path === '/ansiedad-trabajo') return <ArticleAnsiedad />;
-  // ... [Mismas rutas de antes] ...
+  if (path === '/dialogo-interno') return <ArticleDialogoInterno />;
+  if (path === '/dependencia') return <ArticleDependencia />;
+  if (path === '/agorafobia') return <ArticleAgorafobia />;
+  if (path === '/presion-estetica') return <ArticlePresionEstetica />;
+  if (path === '/insomnio') return <ArticleInsomnio />;
+  if (path === '/miedo-cambio') return <ArticleMiedoCambio />;
+  if (path === '/somatizacion') return <ArticleSomatizacion />;
+  if (path === '/eclipse-emocional') return <ArticleEclipseEmocional />;
+  if (path === '/convivencia') return <ArticleConvivencia />;
+  if (path === '/sobrepensar') return <ArticleSobrepensar />;
+  if (path === '/depresion-sonriente') return <ArticleDepresionSonriente />;
+  if (path === '/falsos-limites') return <ArticleEvitacion />;
+  if (path === '/pensamientos-intrusivos') return <ArticlePensamientosIntrusivos />;
+  if (path === '/adiccion-movil') return <ArticleAdiccionMovil />;
+  if (path === '/invalidacion-emocional') return <ArticleInvalidacion />;
   if (path === '/maltrato-psicologico') return <ArticleMaltratoPsicologico />;
-  
-  // <-- Nueva ruta
-  if (path === '/precariedad-vivienda') {
-    return <ArticleVivienda />;
-  }
+  if (path === '/precariedad-vivienda') return <ArticleVivienda />;
 
   return (
     <div className="size-full">
@@ -47,7 +102,7 @@ export default function App() {
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
 
-              {/* ARTÍCULO 17: Maltrato Psicológico (Pasó a gris) */}
+              {/* ARTÍCULO 17: Maltrato Psicológico */}
               <a href="/maltrato-psicologico" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
                 <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Relaciones y Trauma</p>
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">El maltrato invisible: Cuando las heridas no se ven pero destruyen tu identidad</h3>
@@ -55,7 +110,21 @@ export default function App() {
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
 
-              {/* ... [Aquí seguirían los Artículos del 16 al 1 exactamente igual que los tenías] ... */}
+              {/* ARTÍCULO 16: Invalidación Emocional */}
+              <a href="/invalidacion-emocional" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Autoestima y Autoconocimiento</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">El daño de ser "demasiado sensible": Cómo la invalidación emocional destruye tu seguridad</h3>
+                <p className="text-gray-700 mb-4">Descubre qué pasa en tu cerebro cuando te dicen constantemente que "estás exagerando" y cómo volver a confiar en tu criterio con TCC y PNL.</p>
+                <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
+              </a>
+
+              {/* ARTÍCULO 15: Adicción al móvil */}
+              <a href="/adiccion-movil" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Hábitos y Bienestar Digital</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">El "chupete" de los adultos: Por qué usas el móvil para huir de tus propios pensamientos</h3>
+                <p className="text-gray-700 mb-4">Descubre cómo el scroll infinito de las redes sociales actúa como un anestésico temporal y aprende a frenarlo con TCC y PNL.</p>
+                <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
+              </a>
 
             </div>
           </div>
