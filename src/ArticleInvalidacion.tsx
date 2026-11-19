@@ -13,6 +13,14 @@ export function ArticleInvalidacion() {
         'Descubre qué es la invalidación emocional, cómo afecta a tu autoestima y cómo volver a confiar en tus emociones con TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/invalidacion-emocional');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleInvalidacion() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             El daño de ser "demasiado sensible": Cómo la invalidación emocional destruye tu seguridad
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 1 Septiembre 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 1 Septiembre 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             <em>"No es para tanto", "le das demasiadas vueltas a todo", "ya estás dramatizando otra vez"</em>. Si has escuchado estas frases a lo largo de tu vida, es muy probable que hayas acabado creyendo que hay algo roto dentro de ti y que tus emociones son, en el fondo, un error.
@@ -46,7 +54,7 @@ export function ArticleInvalidacion() {
           <p>
             Lo que ocurre es que <strong>dejas de confiar en tu propio panel de mandos</strong>. Empiezas a hacer "gaslighting" contigo mismo/a.
           </p>
-          
+
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
             La consecuencia más grave de la invalidación es la duda crónica. Te pasas la vida preguntándole a los demás si tienes derecho a estar molesto o triste por algo, porque has perdido por completo la confianza en tu propio criterio.
           </blockquote>
@@ -55,7 +63,7 @@ export function ArticleInvalidacion() {
             Cómo recuperar tu brújula interna con TCC y PNL
           </h2>
           <p>
-            Sanar la invalidación no consiste en "dejar de ser sensible", sino en aprender a ser tu principal fuente de validación. 
+            Sanar la invalidación no consiste en "dejar de ser sensible", sino en aprender a ser tu principal fuente de validación.
           </p>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
@@ -86,7 +94,7 @@ export function ArticleInvalidacion() {
             <p className="text-gray-700 mb-6">
               Si sientes que siempre necesitas la aprobación de los demás para saber si lo que sientes es correcto, en <strong>Cuidado Emocional</strong> trabajaremos juntos para reconstruir tu seguridad y tu identidad.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
