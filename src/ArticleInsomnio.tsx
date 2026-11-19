@@ -13,6 +13,14 @@ export function ArticleInsomnio() {
         'Descubre por qué se activa la ansiedad nocturna al acostarte y cómo superar el insomnio con herramientas de TCC y PNL. Terapia presencial en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/insomnio');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleInsomnio() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Por qué no puedes dormir (y cómo apagar tu mente por la noche)
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 5 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 5 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Todos hemos vivido esa frustrante escena: estás agotado o agotada, te metes en la cama deseando por fin cerrar los ojos, pero en cuanto tu cabeza toca la almohada, <strong>tu mente se enciende</strong>.
@@ -96,7 +104,7 @@ export function ArticleInsomnio() {
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Vuelve a dormir de verdad
             </h2>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
