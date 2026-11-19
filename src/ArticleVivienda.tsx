@@ -13,6 +13,14 @@ export function ArticleVivienda() {
         'Cómo afecta la precariedad de la vivienda a tu salud mental y cómo gestionar la ansiedad y el estrés crónico con TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/precariedad-vivienda');
   }, []);
 
   return (
@@ -26,12 +34,12 @@ export function ArticleVivienda() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             El impacto psicológico de la vivienda: Cuando tu casa no es un refugio seguro
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 28 Septiembre 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 28 Septiembre 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
-            Abre las redes sociales o habla con cualquier persona de tu entorno: la conversación siempre acaba derivando hacia el mismo tema. La imposibilidad de comprar una casa, alquileres que devoran el sueldo, mudanzas forzosas o tener que compartir piso rozando los 40 años. 
+            Abre las redes sociales o habla con cualquier persona de tu entorno: la conversación siempre acaba derivando hacia el mismo tema. La imposibilidad de comprar una casa, alquileres que devoran el sueldo, mudanzas forzosas o tener que compartir piso rozando los 40 años.
           </p>
           <p>
             Esta realidad no es solo un problema económico; se ha convertido en uno de los mayores detonantes de <strong>ansiedad, depresión y estrés crónico</strong> en la actualidad.
@@ -46,7 +54,7 @@ export function ArticleVivienda() {
           <p>
             ¿Qué ocurre cuando tu hogar es inestable, temporal o no te permite tener intimidad? Tu cerebro asume que estás en peligro. Entras en un estado de <strong>hipervigilancia constante</strong>. El cortisol (la hormona del estrés) se dispara, provocando insomnio, irritabilidad y un agotamiento mental extremo.
           </p>
-          
+
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
             A este desgaste biológico se le suma el peso de la "culpa impuesta". La sociedad nos ha enseñado que el éxito adulto equivale a tener una vivienda propia. Al no lograrlo, la persona interioriza que ha fracasado, destruyendo su autoestima y su identidad.
           </blockquote>
@@ -86,7 +94,7 @@ export function ArticleVivienda() {
             <p className="text-gray-700 mb-6">
               Si sientes que la situación de la vivienda está paralizando tu vida, generándote ansiedad o haciéndote sentir un fracaso, en <strong>Cuidado Emocional</strong> trabajamos para devolverte la seguridad en ti mismo/a.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
