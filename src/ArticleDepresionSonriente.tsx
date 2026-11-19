@@ -13,6 +13,14 @@ export function ArticleDepresionSonriente() {
         'Descubre qué es la depresión sonriente o de alto funcionamiento y cómo dejar de fingir que estás bien con TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/depresion-sonriente');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleDepresionSonriente() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             El peso de la "depresión sonriente": Cuando fingir que estás bien te deja sin fuerzas
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 22 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 22 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Existe una imagen muy estereotipada del sufrimiento: pensamos que alguien que está mal no puede levantarse de la cama, descuida su aspecto y no es capaz de cumplir con sus obligaciones. Pero la realidad es mucho más compleja y, a menudo, más silenciosa.
@@ -90,7 +98,7 @@ export function ArticleDepresionSonriente() {
             <p className="text-gray-700 mb-6">
               Si estás agotado/a de sostener esa máscara y necesitas un espacio libre de juicios donde por fin puedas ser tú mismo/a (con tus luces y tus sombras), en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) tienes un refugio seguro.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
