@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleAgorafobia() {
+  useEffect(() => {
+    document.title = 'Agorafobia: cómo superar el miedo a alejarse de casa | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Descubre qué es la agorafobia, por qué aparece el miedo a alejarse de tu zona segura y cómo superarlo con TCC y PNL. Terapia presencial en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
