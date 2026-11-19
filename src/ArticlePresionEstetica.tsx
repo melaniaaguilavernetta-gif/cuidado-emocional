@@ -13,6 +13,14 @@ export function ArticlePresionEstetica() {
         'Descubre cómo afecta la presión estética a tu salud mental y cómo hacer las paces con tu cuerpo usando TCC y neutralidad corporal. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/presion-estetica');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticlePresionEstetica() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             ¿Cuánta energía mental gastas al día peleándote con el espejo?
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 4 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 4 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Vivimos bombardeados por imágenes con filtros, estándares de belleza irreales y la presión constante de encajar en un molde que rara vez refleja la realidad.
@@ -58,7 +66,7 @@ export function ArticlePresionEstetica() {
             <li><strong>Neutralidad corporal:</strong> Cambiar el foco. Pasar de exigirle a tu cuerpo que sea "perfecto" a valorarlo por todo lo que te permite hacer (caminar, abrazar, bailar).</li>
             <li><strong>Silenciar al juez interno:</strong> Sustituir el diálogo de castigo por uno de autocompasión y respeto.</li>
           </ul>
-          
+
           <p className="font-medium text-gray-900 mt-6">
             Tu valor como persona no se mide en tallas, ni en la forma de tu cuerpo, ni en cómo luces en una fotografía. Tienes derecho a habitar tu cuerpo en paz y a disfrutar de la vida sin que el espejo sea tu enemigo.
           </p>
@@ -67,7 +75,7 @@ export function ArticlePresionEstetica() {
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Recupera la paz con tu cuerpo
             </h2>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
