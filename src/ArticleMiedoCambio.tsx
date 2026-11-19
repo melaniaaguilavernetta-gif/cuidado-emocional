@@ -13,6 +13,14 @@ export function ArticleMiedoCambio() {
         'Descubre por qué te paraliza el miedo al cambio y cómo avanzar con seguridad usando TCC y PNL. Terapia presencial en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/miedo-cambio');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleMiedoCambio() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             El vértigo de lo desconocido: Por qué te paraliza el miedo al cambio
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 8 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 8 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             A veces sabes perfectamente que algo en tu vida ya no te hace bien: un trabajo que te agota, una relación que se ha apagado, una rutina que te asfixia o una etapa que ya terminó. Sin embargo, cada vez que piensas en dar el paso, sientes un nudo en el estómago que te frena en seco.
@@ -43,7 +51,7 @@ export function ArticleMiedoCambio() {
           <p>
             Desde el punto de vista evolutivo, tu cerebro está diseñado para protegerte y ahorrar energía. Lo conocido, aunque resulte incómodo o insatisfactorio, es predecible: tu mente ya sabe qué esperar y cómo moverse en ese terreno.
           </p>
-          
+
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
             Sin embargo, cuando te planteas un cambio, aparece la <strong>incertidumbre</strong>. Y para tu cerebro, la incertidumbre es sinónimo de amenaza, por lo que activa la alarma para empujarte de vuelta a lo familiar.
           </blockquote>
@@ -87,7 +95,7 @@ export function ArticleMiedoCambio() {
             <p className="text-gray-700 mb-6">
               Si estás atravesando una decisión importante o sientes que el miedo te impide avanzar hacia donde quieres estar, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) podemos trabajarlo juntos.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
