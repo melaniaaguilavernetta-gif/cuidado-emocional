@@ -40,6 +40,14 @@ export default function App() {
         );
       }
 
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute('href', 'https://www.cuidadoemocional.com/');
+
       const shouldScroll = sessionStorage.getItem('scrollToContact');
       if (shouldScroll === 'true') {
         sessionStorage.removeItem('scrollToContact');
