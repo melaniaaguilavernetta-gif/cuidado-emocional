@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleMiedoCambio() {
+  useEffect(() => {
+    document.title = 'Miedo al cambio: por qué nos paraliza y cómo superarlo | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Descubre por qué nos aterra salir de la zona de confort y cómo superar el miedo al cambio y la incertidumbre con TCC y PNL. Terapia en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -37,70 +50,4 @@ export function ArticleMiedoCambio() {
             Nuestra mente es una máquina diseñada para garantizar nuestra supervivencia. Para cumplir su objetivo, necesita predecir lo que va a pasar. Cuando estás en tu zona de confort (incluso si esa zona implica estrés diario, tristeza o aburrimiento), tu cerebro sabe exactamente qué esperar. Sabe cómo gestionar ese dolor porque le resulta familiar.
           </p>
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
-            Sin embargo, cuando te planteas un cambio, aparece la <strong>incertidumbre</strong>. Y para tu cerebro, la incertidumbre es sinónimo de peligro. Ante la falta de información, tu mente se pone en lo peor para intentar protegerte, generando escenarios catastróficos que rara vez llegan a cumplirse.
-          </blockquote>
-
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
-            El alto precio de no cambiar
-          </h2>
-          <p>
-            Cedemos ante el miedo creyendo que, al no movernos, estamos "a salvo". Pero la realidad es que quedarse quieto también tiene consecuencias.
-          </p>
-          <p>
-            Permanecer en un entorno que ya no te aporta nada erosiona lentamente tu autoestima. Empiezas a dudar de tus capacidades, te desconectas de tus ilusiones y terminas normalizando el malestar. A largo plazo, el dolor de quedarte donde no cabes acaba siendo mucho mayor que el miedo temporal que supone dar el salto.
-          </p>
-
-          <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">
-            Cómo enseñarle a tu mente a soltar el control
-          </h2>
-          <p>
-            No podemos apagar el miedo al cambio por completo (es una emoción natural), pero sí podemos aprender a gestionarlo para que deje de tomar las decisiones por nosotros.
-          </p>
-          <p>
-            En Cuidado Emocional, abordamos este bloqueo utilizando dos metodologías muy prácticas:
-          </p>
-
-          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            1. Cuestionar el catastrofismo (TCC)
-          </h3>
-          <p>
-            A través de la Terapia Cognitivo-Conductual, aprendemos a detectar esos pensamientos de "todo va a salir mal". Te enseñaré a debatir con tu propio miedo, exigiéndole pruebas reales y preparándote no solo para el peor escenario, sino también para el mejor (¿y si sale bien?).
-          </p>
-
-          <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            2. Reprogramar tus anclajes de seguridad (PNL)
-          </h3>
-          <p>
-            Con la Programación Neurolingüística, descubrimos que la seguridad no está en el trabajo que tienes ni en el lugar donde vives, sino en tus propios recursos internos. Cambiamos el diálogo de <em>"no seré capaz de soportarlo"</em> a <em>"tengo la capacidad de adaptarme a lo que venga"</em>.
-          </p>
-          
-          <p className="font-medium text-gray-900 mt-8 text-xl">
-            Mereces algo mejor que "aguantar"
-          </p>
-          <p>
-            El cambio siempre genera vértigo porque implica soltar una certeza para agarrar una posibilidad. Pero recuerda: no estás hecho/a para simplemente "aguantar" en lugares que te apagan.
-          </p>
-
-          <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10 shadow-sm">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">
-              Da el primer paso hacia tu bienestar
-            </h2>
-            <p className="text-gray-700 mb-6">
-              Si sientes que el miedo te tiene paralizado/a y necesitas herramientas para dar ese paso que llevas tanto tiempo posponiendo, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) tienes un espacio seguro para prepararte.
-            </p>
-            <button 
-              onClick={() => {
-                sessionStorage.setItem('scrollToContact', 'true');
-                window.location.href = '/';
-              }}
-              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
-            >
-              Reserva tu sesión hoy
-            </button>
-          </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
-  );
-}
+            Sin embargo, cuando te planteas un cambio, aparece la <strong>incertidumbre</strong>. Y para tu cerebro, la incertidumbre es sinónimo de
