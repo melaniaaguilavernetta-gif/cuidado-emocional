@@ -13,6 +13,14 @@ export function ArticleEvitacion() {
         'Descubre la diferencia entre poner límites sanos y la evitación emocional. Aprende comunicación asertiva con TCC y PNL. Terapia presencial en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/falsos-limites');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleEvitacion() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             La trampa de "cortar por lo sano": Por qué huir del conflicto no es poner límites (es evitación)
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 24 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 24 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Seguramente lo has visto en decenas de frases motivacionales en internet: <em>"Si alguien te quita la paz, sácalo de tu vida"</em>, <em>"No le debes explicaciones a nadie"</em> o <em>"Aplica el contacto cero y protege tu energía"</em>.
@@ -52,7 +60,7 @@ export function ArticleEvitacion() {
             <li>En lugar de comunicarlo, cortas la relación o te alejas silenciosamente.</li>
             <li>Sientes un alivio inmediato (reforzador negativo).</li>
           </ul>
-          
+
           <blockquote className="border-l-4 border-emerald-500 pl-4 italic text-gray-600 my-6 bg-emerald-50 py-3 pr-3 rounded-r-lg">
             El problema de la evitación es que funciona a corto plazo, pero a largo plazo encoge tu mundo. Le enseñas a tu cerebro que los problemas son intratables y que tú eres incapaz de gestionarlos. Como resultado, cada vez te sientes más solo/a y más vulnerable ante los demás.
           </blockquote>
@@ -92,7 +100,7 @@ export function ArticleEvitacion() {
             <p className="text-gray-700 mb-6">
               Si sientes que tu respuesta automática ante el malestar es alejarte, aislarte o cortar relaciones, y quieres aprender a comunicarte desde la seguridad y no desde la evitación, en <strong>Cuidado Emocional</strong> podemos entrenarlo juntos.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
