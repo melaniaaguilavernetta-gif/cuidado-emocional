@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cuidadoemocional.com/sitemap.xml
+Sitemap: https://www.cuidadoemocional.com/sitemap.xml
