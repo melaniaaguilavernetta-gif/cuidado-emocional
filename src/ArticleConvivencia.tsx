@@ -1,7 +1,20 @@
+import { useEffect } from 'react';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 
 export function ArticleConvivencia() {
+  useEffect(() => {
+    document.title = 'Sobredosis de convivencia en vacaciones: cómo pedir espacio | Cuidado Emocional';
+
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute(
+        'content',
+        'Por qué pedir espacio en vacaciones mejora tu relación de pareja y familia. Aprende a poner límites sin culpa con TCC y PNL. Terapia en Girona y online.'
+      );
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
