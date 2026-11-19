@@ -13,6 +13,14 @@ export function ArticleAgorafobia() {
         'Descubre qué es la agorafobia, por qué aparece el miedo a alejarse de tu zona segura y cómo superarlo con TCC y PNL. Terapia presencial en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/agorafobia');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleAgorafobia() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             ¿Sientes que no puedes alejarte "demasiado" de tu zona de seguridad?
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 4 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 4 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Existe un gran mito alrededor de la <strong>agorafobia</strong>: mucha gente cree que se trata única y exclusivamente del miedo a salir a la calle. Sin embargo, la realidad de este trastorno es mucho más amplia y silenciosa.
@@ -90,7 +98,7 @@ export function ArticleAgorafobia() {
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Da el primer paso hacia tu bienestar
             </h2>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
