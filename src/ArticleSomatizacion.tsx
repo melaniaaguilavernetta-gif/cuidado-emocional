@@ -13,6 +13,14 @@ export function ArticleSomatizacion() {
         'Descubre qué es la somatización, por qué el estrés y las emociones reprimidas causan dolor físico y cómo tratarlo con TCC y PNL. Terapia en Girona y online.'
       );
     }
+
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', 'https://www.cuidadoemocional.com/somatizacion');
   }, []);
 
   return (
@@ -26,9 +34,9 @@ export function ArticleSomatizacion() {
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Cuando tu cuerpo grita lo que tu boca calla: Entendiendo la somatización
           </h1>
-          <p className="text-gray-500 text-sm">Por Melania • 10 Agosto 2026</p>
+          <p className="text-gray-600 text-sm">Por Melania • 10 Agosto 2026</p>
         </div>
-        
+
         <div className="prose prose-lg prose-emerald max-w-none text-gray-700 space-y-6">
           <p className="text-xl leading-relaxed text-gray-600">
             Es posible que lleves meses (o incluso años) lidiando con un dolor de cabeza recurrente, una tensión constante en las cervicales, problemas digestivos que no tienen explicación médica aparente o bruxismo severo por las noches.
@@ -49,7 +57,7 @@ export function ArticleSomatizacion() {
           <p>
             ¿Qué ocurre cuando reprimes esa reacción?
           </p>
-          
+
           <ul className="list-disc pl-6 space-y-2 text-gray-700">
             <li>Cuando te callas una opinión por miedo al conflicto.</li>
             <li>Cuando no dices "NO" a un favor que te sobrepasa.</li>
@@ -98,7 +106,7 @@ export function ArticleSomatizacion() {
             <p className="text-gray-700 mb-6">
               Si llevas tiempo arrastrando malestares físicos provocados por el estrés y quieres aprender a gestionar la carga emocional que los alimenta, en <strong>Cuidado Emocional</strong> (presencial en Girona y Online) tienes un espacio seguro para hacerlo.
             </p>
-            <button 
+            <button
               onClick={() => {
                 sessionStorage.setItem('scrollToContact', 'true');
                 window.location.href = '/';
