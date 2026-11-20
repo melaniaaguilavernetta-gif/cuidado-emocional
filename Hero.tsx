@@ -9,32 +9,32 @@ export function Hero() {
           alt="Pradera verde tranquila y luminosa que evoca calma y bienestar emocional"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/80 to-teal-800/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-950/85 via-emerald-900/80 to-teal-900/75"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white mt-24">
-        <h1 className="text-lg md:text-xl font-medium tracking-widest uppercase mb-4 text-emerald-200">
+        <p className="text-base md:text-lg font-medium tracking-widest uppercase mb-4 text-emerald-200">
           Terapeuta en Girona y Terapia Online · TCC y PNL
+        </p>
+
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          Transforma tu mente, transforma tu vida
         </h1>
 
-        <h2 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          Transforma tu mente, transforma tu vida
-        </h2>
-
-        <p className="text-xl md:text-2xl max-w-3xl mx-auto opacity-90 mb-10">
+        <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-100 mb-10">
           Te acompaño en terapia presencial en Girona y terapia online adaptada a ti, combinando las herramientas más efectivas de la Terapia Cognitivo-Conductual y la PNL. Te guiaré paso a paso en la gestión de la ansiedad y el estrés, ayudándote a sanar tu autoestima tras etapas de depresión o estancamiento, para que superes tus bloqueos y construyas la vida que deseas.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contacto"
-            className="inline-block bg-emerald-500 hover:bg-emerald-400 text-gray-950 font-semibold px-8 py-4 rounded-full transition-colors"
+            className="inline-block bg-emerald-400 hover:bg-emerald-300 text-gray-950 font-semibold px-8 py-4 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             Pedir información o cita
           </a>
           <a
             href="#blog"
-            className="inline-block border border-white/70 hover:bg-white/10 text-white font-medium px-8 py-4 rounded-full transition-colors"
+            className="inline-block border border-white/80 bg-black/20 hover:bg-white/15 text-white font-medium px-8 py-4 rounded-full transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
           >
             Explorar artículos
           </a>
