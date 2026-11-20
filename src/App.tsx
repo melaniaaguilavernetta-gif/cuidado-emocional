@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { lazy, Suspense, useEffect } from 'react';
 import { Header } from '../Header';
 import { Hero } from '../Hero';
 import { About } from '../About';
@@ -6,24 +6,65 @@ import { Services } from '../Services';
 import { Benefits } from '../Benefits';
 import { Contact } from '../Contact';
 import { Footer } from '../Footer';
-import { ArticleAnsiedad } from './ArticleAnsiedad';
-import { ArticleDialogoInterno } from './ArticleDialogoInterno';
-import { ArticleDependencia } from './ArticleDependencia';
-import { ArticleAgorafobia } from './ArticleAgorafobia';
-import { ArticlePresionEstetica } from './ArticlePresionEstetica';
-import { ArticleInsomnio } from './ArticleInsomnio';
-import { ArticleMiedoCambio } from './ArticleMiedoCambio';
-import { ArticleSomatizacion } from './ArticleSomatizacion';
-import { ArticleEclipseEmocional } from './ArticleEclipseEmocional';
-import { ArticleConvivencia } from './ArticleConvivencia';
-import { ArticleSobrepensar } from './ArticleSobrepensar';
-import { ArticleDepresionSonriente } from './ArticleDepresionSonriente';
-import { ArticleEvitacion } from './ArticleEvitacion';
-import { ArticlePensamientosIntrusivos } from './ArticlePensamientosIntrusivos';
-import { ArticleAdiccionMovil } from './ArticleAdiccionMovil';
-import { ArticleInvalidacion } from './ArticleInvalidacion';
-import { ArticleMaltratoPsicologico } from './ArticleMaltratoPsicologico';
-import { ArticleVivienda } from './ArticleVivienda';
+
+const ArticleAnsiedad = lazy(() =>
+  import('./ArticleAnsiedad').then((m) => ({ default: m.ArticleAnsiedad }))
+);
+const ArticleDialogoInterno = lazy(() =>
+  import('./ArticleDialogoInterno').then((m) => ({ default: m.ArticleDialogoInterno }))
+);
+const ArticleDependencia = lazy(() =>
+  import('./ArticleDependencia').then((m) => ({ default: m.ArticleDependencia }))
+);
+const ArticleAgorafobia = lazy(() =>
+  import('./ArticleAgorafobia').then((m) => ({ default: m.ArticleAgorafobia }))
+);
+const ArticlePresionEstetica = lazy(() =>
+  import('./ArticlePresionEstetica').then((m) => ({ default: m.ArticlePresionEstetica }))
+);
+const ArticleInsomnio = lazy(() =>
+  import('./ArticleInsomnio').then((m) => ({ default: m.ArticleInsomnio }))
+);
+const ArticleMiedoCambio = lazy(() =>
+  import('./ArticleMiedoCambio').then((m) => ({ default: m.ArticleMiedoCambio }))
+);
+const ArticleSomatizacion = lazy(() =>
+  import('./ArticleSomatizacion').then((m) => ({ default: m.ArticleSomatizacion }))
+);
+const ArticleEclipseEmocional = lazy(() =>
+  import('./ArticleEclipseEmocional').then((m) => ({ default: m.ArticleEclipseEmocional }))
+);
+const ArticleConvivencia = lazy(() =>
+  import('./ArticleConvivencia').then((m) => ({ default: m.ArticleConvivencia }))
+);
+const ArticleSobrepensar = lazy(() =>
+  import('./ArticleSobrepensar').then((m) => ({ default: m.ArticleSobrepensar }))
+);
+const ArticleDepresionSonriente = lazy(() =>
+  import('./ArticleDepresionSonriente').then((m) => ({ default: m.ArticleDepresionSonriente }))
+);
+const ArticleEvitacion = lazy(() =>
+  import('./ArticleEvitacion').then((m) => ({ default: m.ArticleEvitacion }))
+);
+const ArticlePensamientosIntrusivos = lazy(() =>
+  import('./ArticlePensamientosIntrusivos').then((m) => ({
+    default: m.ArticlePensamientosIntrusivos,
+  }))
+);
+const ArticleAdiccionMovil = lazy(() =>
+  import('./ArticleAdiccionMovil').then((m) => ({ default: m.ArticleAdiccionMovil }))
+);
+const ArticleInvalidacion = lazy(() =>
+  import('./ArticleInvalidacion').then((m) => ({ default: m.ArticleInvalidacion }))
+);
+const ArticleMaltratoPsicologico = lazy(() =>
+  import('./ArticleMaltratoPsicologico').then((m) => ({
+    default: m.ArticleMaltratoPsicologico,
+  }))
+);
+const ArticleVivienda = lazy(() =>
+  import('./ArticleVivienda').then((m) => ({ default: m.ArticleVivienda }))
+);
 
 export default function App() {
   const path = window.location.pathname;
@@ -61,25 +102,64 @@ export default function App() {
     }
   }, [path]);
 
-  // RUTAS DE ARTÍCULOS
-  if (path === '/ansiedad-trabajo') return <ArticleAnsiedad />;
-  if (path === '/dialogo-interno') return <ArticleDialogoInterno />;
-  if (path === '/dependencia') return <ArticleDependencia />;
-  if (path === '/agorafobia') return <ArticleAgorafobia />;
-  if (path === '/presion-estetica') return <ArticlePresionEstetica />;
-  if (path === '/insomnio') return <ArticleInsomnio />;
-  if (path === '/miedo-cambio') return <ArticleMiedoCambio />;
-  if (path === '/somatizacion') return <ArticleSomatizacion />;
-  if (path === '/eclipse-emocional') return <ArticleEclipseEmocional />;
-  if (path === '/convivencia') return <ArticleConvivencia />;
-  if (path === '/sobrepensar') return <ArticleSobrepensar />;
-  if (path === '/depresion-sonriente') return <ArticleDepresionSonriente />;
-  if (path === '/falsos-limites') return <ArticleEvitacion />;
-  if (path === '/pensamientos-intrusivos') return <ArticlePensamientosIntrusivos />;
-  if (path === '/adiccion-movil') return <ArticleAdiccionMovil />;
-  if (path === '/invalidacion-emocional') return <ArticleInvalidacion />;
-  if (path === '/maltrato-psicologico') return <ArticleMaltratoPsicologico />;
-  if (path === '/precariedad-vivienda') return <ArticleVivienda />;
+  // RUTAS DE ARTÍCULOS (CARGA DIFERIDA)
+  const renderArticle = () => {
+    switch (path) {
+      case '/ansiedad-trabajo':
+        return <ArticleAnsiedad />;
+      case '/dialogo-interno':
+        return <ArticleDialogoInterno />;
+      case '/dependencia':
+        return <ArticleDependencia />;
+      case '/agorafobia':
+        return <ArticleAgorafobia />;
+      case '/presion-estetica':
+        return <ArticlePresionEstetica />;
+      case '/insomnio':
+        return <ArticleInsomnio />;
+      case '/miedo-cambio':
+        return <ArticleMiedoCambio />;
+      case '/somatizacion':
+        return <ArticleSomatizacion />;
+      case '/eclipse-emocional':
+        return <ArticleEclipseEmocional />;
+      case '/convivencia':
+        return <ArticleConvivencia />;
+      case '/sobrepensar':
+        return <ArticleSobrepensar />;
+      case '/depresion-sonriente':
+        return <ArticleDepresionSonriente />;
+      case '/falsos-limites':
+        return <ArticleEvitacion />;
+      case '/pensamientos-intrusivos':
+        return <ArticlePensamientosIntrusivos />;
+      case '/adiccion-movil':
+        return <ArticleAdiccionMovil />;
+      case '/invalidacion-emocional':
+        return <ArticleInvalidacion />;
+      case '/maltrato-psicologico':
+        return <ArticleMaltratoPsicologico />;
+      case '/precariedad-vivienda':
+        return <ArticleVivienda />;
+      default:
+        return null;
+    }
+  };
+
+  const articleComponent = renderArticle();
+  if (articleComponent) {
+    return (
+      <Suspense
+        fallback={
+          <div className="min-h-screen flex items-center justify-center bg-white text-gray-700">
+            Cargando artículo...
+          </div>
+        }
+      >
+        {articleComponent}
+      </Suspense>
+    );
+  }
 
   return (
     <div className="size-full">
