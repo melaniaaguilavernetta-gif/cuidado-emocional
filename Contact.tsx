@@ -34,11 +34,10 @@ export function Contact() {
     <section id="contacto" className="py-20 bg-gradient-to-b from-teal-50 to-emerald-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          {/* H2 con font-bold para mantener la coherencia de diseño */}
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             ¿Listo/a para dar el primer paso?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Reserva tu primera sesión y descubre cómo la combinación de TCC y PNL puede ayudarte
             a vivir con más calma, claridad y confianza.
           </p>
@@ -50,7 +49,7 @@ export function Contact() {
               <CardContent className="pt-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm mb-2 text-gray-700">
+                    <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-800">
                       Nombre completo
                     </label>
                     <Input
@@ -66,7 +65,7 @@ export function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm mb-2 text-gray-700">
+                    <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-800">
                       Email
                     </label>
                     <Input
@@ -82,7 +81,7 @@ export function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="phone" className="block text-sm mb-2 text-gray-700">
+                    <label htmlFor="phone" className="block text-sm font-medium mb-2 text-gray-800">
                       Teléfono
                     </label>
                     <Input
@@ -97,7 +96,7 @@ export function Contact() {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm mb-2 text-gray-700">
+                    <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-800">
                       Mensaje
                     </label>
                     <Textarea
@@ -111,9 +110,9 @@ export function Contact() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 text-white">
+                  <Button type="submit" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold">
                     Enviar mensaje
-                    <Send className="ml-2 w-4 h-4" />
+                    <Send className="ml-2 w-4 h-4" aria-hidden="true" />
                   </Button>
                 </form>
               </CardContent>
@@ -122,16 +121,18 @@ export function Contact() {
 
           <div className="space-y-6">
             <div>
-              {/* H3 con font-semibold */}
               <h3 className="text-2xl font-semibold mb-6 text-gray-900">Información de contacto</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-emerald-600" />
+                    <Mail className="w-6 h-6 text-emerald-700" aria-hidden="true" />
                   </div>
                   <div>
-                    <div className="text-gray-900 mb-1">Email</div>
-                    <a href="mailto:hola@cuidadoemocional.com" className="text-emerald-600 hover:underline">
+                    <div className="font-medium text-gray-900 mb-1">Email</div>
+                    <a
+                      href="mailto:hola@cuidadoemocional.com"
+                      className="text-emerald-800 font-medium hover:underline"
+                    >
                       hola@cuidadoemocional.com
                     </a>
                   </div>
@@ -139,11 +140,14 @@ export function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-teal-600" />
+                    <Phone className="w-6 h-6 text-teal-700" aria-hidden="true" />
                   </div>
                   <div>
-                    <div className="text-gray-900 mb-1">Teléfono</div>
-                    <a href="tel:+34696682277" className="text-emerald-600 hover:underline">
+                    <div className="font-medium text-gray-900 mb-1">Teléfono</div>
+                    <a
+                      href="tel:+34696682277"
+                      className="text-emerald-800 font-medium hover:underline"
+                    >
                       +34 696 68 22 77
                     </a>
                   </div>
@@ -151,22 +155,19 @@ export function Contact() {
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-green-600" />
+                    <MapPin className="w-6 h-6 text-green-700" aria-hidden="true" />
                   </div>
                   <div>
-                    <div className="text-gray-900 mb-1">Ubicación</div>
-                    <p className="text-gray-600">
-                      Girona, España
-                    </p>
+                    <div className="font-medium text-gray-900 mb-1">Ubicación</div>
+                    <p className="text-gray-700">Girona, España</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <Card className="bg-gradient-to-br from-emerald-600 to-teal-600 text-white">
+            <Card className="bg-gradient-to-br from-emerald-700 to-teal-700 text-white">
               <CardContent className="pt-6">
-                {/* H4 con font-semibold */}
-                <h4 className="text-xl font-semibold mb-3">Horario de atención</h4>
+                <h3 className="text-xl font-semibold mb-3">Horario de atención</h3>
                 <div className="space-y-2 text-emerald-50">
                   <div className="flex justify-between">
                     <span>Lunes - Viernes:</span>
