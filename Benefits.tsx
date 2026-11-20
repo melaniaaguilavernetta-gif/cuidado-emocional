@@ -5,22 +5,26 @@ const benefits = [
   {
     icon: Sparkles,
     title: 'Enfoque integrador',
-    description: 'No me limito a una sola técnica. Selecciono las herramientas prácticas más adecuadas para tu situación concreta, ya sea para vencer fobias limitantes, resolver conflictos de pareja o recuperar tu paz mental.',
+    description:
+      'No me limito a una sola técnica. Selecciono las herramientas prácticas más adecuadas para tu situación concreta, ya sea para vencer fobias limitantes, resolver conflictos de pareja o recuperar tu paz mental.',
   },
   {
     icon: Compass,
     title: 'Disponibilidad y cercanía',
-    description: 'Estoy disponible entre sesiones para dudas puntuales, no solo durante la hora de consulta.',
+    description:
+      'Estoy disponible entre sesiones para dudas puntuales, no solo durante la hora de consulta.',
   },
   {
     icon: Smile,
     title: 'Atención personalizada',
-    description: 'Cada proceso es único. Adapto las sesiones a tus necesidades, objetivos y circunstancias para ofrecerte un acompañamiento realmente efectivo.',
+    description:
+      'Cada proceso es único. Adapto las sesiones a tus necesidades, objetivos y circunstancias para ofrecerte un acompañamiento realmente efectivo.',
   },
   {
     icon: Shield,
     title: 'Herramientas para toda la vida',
-    description: 'Además de aliviar tu malestar actual, aprenderás recursos para la gestión del estrés y la prevención de recaídas frente a adicciones o hábitos destructivos. Te llevarás estrategias que podrás utilizar de forma autónoma ante cualquier desafío futuro.',
+    description:
+      'Además de aliviar tu malestar actual, aprenderás recursos para la gestión del estrés y la prevención de recaídas frente a adicciones o hábitos destructivos. Te llevarás estrategias que podrás utilizar de forma autónoma ante cualquier desafío futuro.',
   },
 ];
 
@@ -37,11 +41,10 @@ export function Benefits() {
                   <div key={index} className="flex gap-4">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center">
-                        <Icon className="w-6 h-6 text-emerald-600" />
+                        <Icon className="w-6 h-6 text-emerald-700" aria-hidden="true" />
                       </div>
                     </div>
                     <div>
-                      {/* H3 con fuente en negrita suave (font-semibold) */}
                       <h3 className="text-xl font-semibold mb-2 text-gray-900">{benefit.title}</h3>
                       <p className="text-gray-700">{benefit.description}</p>
                     </div>
@@ -52,7 +55,6 @@ export function Benefits() {
           </div>
 
           <div className="order-1 md:order-2">
-            {/* H2 enriquecido para SEO y con fuente en negrita (font-bold) */}
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
               ¿Por qué elegir mi terapia en Girona y online?
             </h2>
