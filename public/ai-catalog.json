@@ -1,0 +1,100 @@
+{
+  "@context": "https://schema.org",
+  "name": "Cuidado Emocional",
+  "url": "https://www.cuidadoemocional.com/",
+  "description": "Acompañamiento terapéutico con Terapia Cognitivo-Conductual (TCC) y PNL en Girona (presencial) y online.",
+  "areaServed": ["Girona", "Online"],
+  "languages": ["es"],
+  "resources": [
+    {
+      "title": "El impacto psicológico de la vivienda",
+      "url": "https://www.cuidadoemocional.com/precariedad-vivienda",
+      "category": "Sociedad y Salud Mental"
+    },
+    {
+      "title": "El maltrato invisible",
+      "url": "https://www.cuidadoemocional.com/maltrato-psicologico",
+      "category": "Relaciones y Trauma"
+    },
+    {
+      "title": "El daño de ser demasiado sensible",
+      "url": "https://www.cuidadoemocional.com/invalidacion-emocional",
+      "category": "Autoestima y Autoconocimiento"
+    },
+    {
+      "title": "Adicción al móvil",
+      "url": "https://www.cuidadoemocional.com/adiccion-movil",
+      "category": "Hábitos y Bienestar Digital"
+    },
+    {
+      "title": "Pensamientos intrusivos",
+      "url": "https://www.cuidadoemocional.com/pensamientos-intrusivos",
+      "category": "Ansiedad"
+    },
+    {
+      "title": "Límites sanos vs. evitación",
+      "url": "https://www.cuidadoemocional.com/falsos-limites",
+      "category": "Relaciones"
+    },
+    {
+      "title": "Depresión sonriente",
+      "url": "https://www.cuidadoemocional.com/depresion-sonriente",
+      "category": "Bienestar"
+    },
+    {
+      "title": "Cómo dejar de sobrepensar",
+      "url": "https://www.cuidadoemocional.com/sobrepensar",
+      "category": "Gestión mental"
+    },
+    {
+      "title": "Sobredosis de convivencia",
+      "url": "https://www.cuidadoemocional.com/convivencia",
+      "category": "Vínculos"
+    },
+    {
+      "title": "El eclipse emocional",
+      "url": "https://www.cuidadoemocional.com/eclipse-emocional",
+      "category": "Autoestima"
+    },
+    {
+      "title": "Somatización del estrés",
+      "url": "https://www.cuidadoemocional.com/somatizacion",
+      "category": "Cuerpo y mente"
+    },
+    {
+      "title": "Miedo al cambio e incertidumbre",
+      "url": "https://www.cuidadoemocional.com/miedo-cambio",
+      "category": "Transiciones"
+    },
+    {
+      "title": "Insomnio y ansiedad nocturna",
+      "url": "https://www.cuidadoemocional.com/insomnio",
+      "category": "Descanso"
+    },
+    {
+      "title": "Presión estética y espejo",
+      "url": "https://www.cuidadoemocional.com/presion-estetica",
+      "category": "Autoimagen"
+    },
+    {
+      "title": "Agorafobia y zona de seguridad",
+      "url": "https://www.cuidadoemocional.com/agorafobia",
+      "category": "Fobias"
+    },
+    {
+      "title": "Dependencia emocional",
+      "url": "https://www.cuidadoemocional.com/dependencia",
+      "category": "Relaciones"
+    },
+    {
+      "title": "Reprogramar tu voz crítica",
+      "url": "https://www.cuidadoemocional.com/dialogo-interno",
+      "category": "Crecimiento"
+    },
+    {
+      "title": "Ansiedad en el trabajo",
+      "url": "https://www.cuidadoemocional.com/ansiedad-trabajo",
+      "category": "Estrés laboral"
+    }
+  ]
+}
