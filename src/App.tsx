@@ -10,7 +10,7 @@ import { ArticleAnsiedad } from './ArticleAnsiedad';
 import { ArticleDialogoInterno } from './ArticleDialogoInterno';
 import { ArticleDependencia } from './ArticleDependencia';
 import { ArticleAgorafobia } from './ArticleAgorafobia';
-import { ArticlePresionEstetica } from './ArticlePresionEstetica'; 
+import { ArticlePresionEstetica } from './ArticlePresionEstetica';
 import { ArticleInsomnio } from './ArticleInsomnio';
 import { ArticleMiedoCambio } from './ArticleMiedoCambio';
 import { ArticleSomatizacion } from './ArticleSomatizacion';
@@ -89,51 +89,246 @@ export default function App() {
         <About />
         <Services />
         <Benefits />
-        
+
         {/* SECCIÓN DE BLOG Y RECURSOS */}
         <section id="blog" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Blog y Recursos</h2>
               <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-                Artículos y herramientas clínicas para tu bienestar emocional.
+                Artículos y herramientas clínicas de TCC y PNL para tu bienestar emocional, en Girona y online.
               </p>
             </div>
-            
-            <div className="max-w-3xl mx-auto space-y-6"> 
 
+            <div className="max-w-3xl mx-auto space-y-6">
               {/* ARTÍCULO 18: Vivienda y Salud Mental (NUEVO DESTACADO) */}
-              <a href="/precariedad-vivienda" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300">
-                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Sociedad y Salud Mental</p>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">El impacto psicológico de la vivienda: Cuando tu casa no es un refugio seguro</h3>
-                <p className="text-gray-700 mb-4">Descubre cómo la inestabilidad habitacional dispara tu estrés y aprende a desvincular tu valor personal de la crisis de la vivienda con TCC.</p>
+              <a
+                href="/precariedad-vivienda"
+                className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-emerald-600 shadow-sm hover:shadow-lg transition-all duration-300"
+              >
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">
+                  Sociedad y Salud Mental
+                </p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  El impacto psicológico de la vivienda: Cuando tu casa no es un refugio seguro
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Descubre cómo la inestabilidad habitacional dispara tu estrés y aprende a desvincular tu valor personal de la crisis de la vivienda con TCC.
+                </p>
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
 
               {/* ARTÍCULO 17: Maltrato Psicológico */}
-              <a href="/maltrato-psicologico" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
-                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Relaciones y Trauma</p>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">El maltrato invisible: Cuando las heridas no se ven pero destruyen tu identidad</h3>
-                <p className="text-gray-700 mb-4">Descubre cómo identificar el abuso emocional (gaslighting, aislamiento) y cómo reconstruir tu autoestima y seguridad con TCC y PNL.</p>
+              <a
+                href="/maltrato-psicologico"
+                className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300"
+              >
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">
+                  Relaciones y Trauma
+                </p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  El maltrato invisible: Cuando las heridas no se ven pero destruyen tu identidad
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Descubre cómo identificar el abuso emocional (gaslighting, aislamiento) y cómo reconstruir tu autoestima y seguridad con TCC y PNL.
+                </p>
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
 
               {/* ARTÍCULO 16: Invalidación Emocional */}
-              <a href="/invalidacion-emocional" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
-                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Autoestima y Autoconocimiento</p>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">El daño de ser "demasiado sensible": Cómo la invalidación emocional destruye tu seguridad</h3>
-                <p className="text-gray-700 mb-4">Descubre qué pasa en tu cerebro cuando te dicen constantemente que "estás exagerando" y cómo volver a confiar en tu criterio con TCC y PNL.</p>
+              <a
+                href="/invalidacion-emocional"
+                className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300"
+              >
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">
+                  Autoestima y Autoconocimiento
+                </p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  El daño de ser "demasiado sensible": Cómo la invalidación emocional destruye tu seguridad
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Descubre qué pasa en tu cerebro cuando te dicen constantemente que "estás exagerando" y cómo volver a confiar en tu criterio con TCC y PNL.
+                </p>
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
 
               {/* ARTÍCULO 15: Adicción al móvil */}
-              <a href="/adiccion-movil" className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300">
-                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">Hábitos y Bienestar Digital</p>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">El "chupete" de los adultos: Por qué usas el móvil para huir de tus propios pensamientos</h3>
-                <p className="text-gray-700 mb-4">Descubre cómo el scroll infinito de las redes sociales actúa como un anestésico temporal y aprende a frenarlo con TCC y PNL.</p>
+              <a
+                href="/adiccion-movil"
+                className="block bg-emerald-50 rounded-2xl p-8 border-l-4 border-gray-300 shadow-sm hover:shadow-lg transition-all duration-300"
+              >
+                <p className="text-emerald-700 font-semibold mb-2 tracking-wide uppercase text-sm">
+                  Hábitos y Bienestar Digital
+                </p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  El "chupete" de los adultos: Por qué usas el móvil para huir de tus propios pensamientos
+                </h3>
+                <p className="text-gray-700 mb-4">
+                  Descubre cómo el scroll infinito de las redes sociales actúa como un anestésico temporal y aprende a frenarlo con TCC y PNL.
+                </p>
                 <span className="text-emerald-700 font-medium hover:underline">Leer artículo completo →</span>
               </a>
+            </div>
 
+            {/* RESTO DE ARTÍCULOS DEL BLOG */}
+            <div className="max-w-3xl mx-auto mt-12 pt-10 border-t border-gray-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Todos los artículos publicados</h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <li>
+                  <a
+                    href="/pensamientos-intrusivos"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Ansiedad
+                    </span>
+                    <span className="font-semibold text-gray-900">Pensamientos intrusivos →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/falsos-limites"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Relaciones
+                    </span>
+                    <span className="font-semibold text-gray-900">Límites sanos vs. evitación →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/depresion-sonriente"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Bienestar
+                    </span>
+                    <span className="font-semibold text-gray-900">Depresión sonriente →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/sobrepensar"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Gestión mental
+                    </span>
+                    <span className="font-semibold text-gray-900">Cómo dejar de sobrepensar →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/convivencia"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Vínculos
+                    </span>
+                    <span className="font-semibold text-gray-900">Sobredosis de convivencia →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/eclipse-emocional"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Autoestima
+                    </span>
+                    <span className="font-semibold text-gray-900">El eclipse emocional →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/somatizacion"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Cuerpo y mente
+                    </span>
+                    <span className="font-semibold text-gray-900">Somatización del estrés →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/miedo-cambio"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Transiciones
+                    </span>
+                    <span className="font-semibold text-gray-900">Miedo al cambio e incertidumbre →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/insomnio"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Descanso
+                    </span>
+                    <span className="font-semibold text-gray-900">Insomnio y ansiedad nocturna →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/presion-estetica"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Autoimagen
+                    </span>
+                    <span className="font-semibold text-gray-900">Presión estética y espejo →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/agorafobia"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Fobias
+                    </span>
+                    <span className="font-semibold text-gray-900">Agorafobia y zona de seguridad →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/dependencia"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Relaciones
+                    </span>
+                    <span className="font-semibold text-gray-900">Dependencia emocional →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/dialogo-interno"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Crecimiento
+                    </span>
+                    <span className="font-semibold text-gray-900">Reprogramar tu voz crítica →</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/ansiedad-trabajo"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Estrés laboral
+                    </span>
+                    <span className="font-semibold text-gray-900">Ansiedad en el trabajo →</span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
