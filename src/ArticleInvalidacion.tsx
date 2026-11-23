@@ -104,9 +104,33 @@ export function ArticleInvalidacion() {
               Reserva tu sesión segura (Girona y Online)
             </button>
           </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
-  );
-}
+
+          <section
+            aria-labelledby="relacionados-invalidacion"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-invalidacion" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Si quieres seguir explorando cómo fortalecer tu criterio, tu autoestima y tu diálogo interno, aquí tienes lecturas muy cercanas a este tema:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/dialogo-interno"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Crecimiento
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Reprogramar tu voz crítica →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/maltrato-psicologico"
+                  className="block p-4 rounded-xl bg-gray-50 hover:
