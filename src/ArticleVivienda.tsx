@@ -104,6 +104,73 @@ export function ArticleVivienda() {
               Pide tu cita (Girona y Online)
             </button>
           </div>
+
+          <section
+            aria-labelledby="relacionados-vivienda"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-vivienda" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Si esta lectura resuena contigo, estos artículos conectados con el estrés, el descanso y la toma de decisiones pueden ayudarte a dar el siguiente paso:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/miedo-cambio"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Transiciones
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Miedo al cambio e incertidumbre →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/somatizacion"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Cuerpo y mente
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Somatización del estrés →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/insomnio"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Descanso
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Insomnio y ansiedad nocturna →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sobrepensar"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Gestión mental
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Cómo dejar de sobrepensar →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
       <Footer />
