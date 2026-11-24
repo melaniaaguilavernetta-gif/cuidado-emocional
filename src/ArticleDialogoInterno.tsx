@@ -146,6 +146,73 @@ export function ArticleDialogoInterno() {
                 Reserva tu sesión hoy
               </button>
             </div>
+
+            <section
+              aria-labelledby="relacionados-dialogo"
+              className="mt-14 pt-10 border-t border-gray-200"
+            >
+              <h2 id="relacionados-dialogo" className="text-2xl font-bold text-gray-900 mb-3">
+                Artículos relacionados para seguir profundizando
+              </h2>
+              <p className="text-gray-700 mb-6">
+                Cambiar la forma en que te hablas es más sencillo cuando entiendes de dónde viene esa exigencia y cómo afecta a tu mente y a tu cuerpo:
+              </p>
+
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <li>
+                  <a
+                    href="/invalidacion-emocional"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Autoestima y Autoconocimiento
+                    </span>
+                    <span className="font-semibold text-gray-900">
+                      El daño de ser "demasiado sensible" →
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/sobrepensar"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Gestión Mental y Ansiedad
+                    </span>
+                    <span className="font-semibold text-gray-900">
+                      El bucle de sobrepensar →
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/somatizacion"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Bienestar Físico y Emocional
+                    </span>
+                    <span className="font-semibold text-gray-900">
+                      Entendiendo la somatización →
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/adiccion-movil"
+                    className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                  >
+                    <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                      Hábitos y Bienestar
+                    </span>
+                    <span className="font-semibold text-gray-900">
+                      La anestesia de bolsillo: adicción al móvil →
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </section>
           </div>
         </article>
       </main>
