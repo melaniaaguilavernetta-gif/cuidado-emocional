@@ -133,4 +133,47 @@ export function ArticleInvalidacion() {
               <li>
                 <a
                   href="/maltrato-psicologico"
-                  className="block p-4 rounded-xl bg-gray-50 hover:
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Trauma
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El maltrato invisible →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/eclipse-emocional"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Autoestima
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El eclipse emocional →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sobrepensar"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Gestión mental
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Cómo dejar de sobrepensar →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
