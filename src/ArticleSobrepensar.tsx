@@ -101,9 +101,33 @@ export function ArticleSobrepensar() {
               Reserva tu sesión hoy
             </button>
           </div>
-        </div>
-      </main>
-      <Footer />
-    </div>
-  );
-}
+
+          <section
+            aria-labelledby="relacionados-sobrepensar"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-sobrepensar" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Cuando la mente entra en bucle, suele repercutir en el descanso, en el cuerpo o en cómo te relacionas. Estas lecturas pueden ayudarte a seguir desenredando ese desgaste:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/somatizacion"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Cuerpo y mente
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Somatización del estrés →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/insomnio"
+                  className="block p-4 rounded-xl bg-gray-
