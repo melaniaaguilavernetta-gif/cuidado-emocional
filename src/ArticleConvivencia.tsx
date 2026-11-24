@@ -104,6 +104,73 @@ export function ArticleConvivencia() {
               Reserva tu sesión hoy
             </button>
           </div>
+
+          <section
+            aria-labelledby="relacionados-convivencia"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-convivencia" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Pedir espacio y sostener vínculos equilibrados suele ir de la mano de revisar la dependencia, la culpa o los bucles mentales. Estas lecturas pueden acompañarte:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/dependencia"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Vínculos
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Dependencia emocional →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/invalidacion-emocional"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Autoestima y Autoconocimiento
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El daño de ser "demasiado sensible" →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sobrepensar"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Gestión Mental y Ansiedad
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El bucle de sobrepensar →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/maltrato-psicologico"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Trauma
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El maltrato invisible →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
       <Footer />
