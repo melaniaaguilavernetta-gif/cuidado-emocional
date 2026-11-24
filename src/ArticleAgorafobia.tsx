@@ -108,6 +108,73 @@ export function ArticleAgorafobia() {
               Reserva tu sesión hoy
             </button>
           </div>
+
+          <section
+            aria-labelledby="relacionados-agorafobia"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-agorafobia" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Cuando el miedo limita tus desplazamientos o planes, entender cómo actúan la evitación, la anticipación mental y las señales físicas marca la diferencia:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/falsos-limites"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Comunicación
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Límites sanos vs. evitación →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sobrepensar"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Gestión Mental y Ansiedad
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El bucle de sobrepensar →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/miedo-cambio"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Crecimiento y Transiciones Vitales
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Miedo al cambio e incertidumbre →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/somatizacion"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Bienestar Físico y Emocional
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Entendiendo la somatización →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
       <Footer />
