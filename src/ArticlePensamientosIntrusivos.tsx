@@ -104,6 +104,73 @@ export function ArticlePensamientosIntrusivos() {
               Reserva tu sesión segura (Girona y Online)
             </button>
           </div>
+
+          <section
+            aria-labelledby="relacionados-intrusivos"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-intrusivos" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Cuando aparecen pensamientos intrusivos, es frecuente que se mezclen con la rumiación, las conductas de evitación o el miedo a perder el control. Estas lecturas pueden ayudarte:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/sobrepensar"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Gestión Mental y Ansiedad
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El bucle de sobrepensar →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/falsos-limites"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Comunicación
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Límites sanos vs. evitación →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/eclipse-emocional"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Autoestima y Autoconocimiento
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El eclipse emocional →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/ansiedad-trabajo"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Gestión de la Ansiedad
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Cómo calmar la ansiedad en el trabajo →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
       <Footer />
