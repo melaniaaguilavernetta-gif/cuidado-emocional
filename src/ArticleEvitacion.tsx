@@ -110,6 +110,73 @@ export function ArticleEvitacion() {
               Reserva tu sesión hoy (Girona y Online)
             </button>
           </div>
+
+          <section
+            aria-labelledby="relacionados-evitacion"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-evitacion" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Aprender a sostener conversaciones difíciles y poner límites sin culpa suele conectar con cómo gestionas tus vínculos, tu autoestima y las señales de malestar:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/dependencia"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Vínculos
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Dependencia emocional →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/convivencia"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Comunicación
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Sobredosis de convivencia →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/maltrato-psicologico"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones y Trauma
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El maltrato invisible →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/sobrepensar"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Gestión Mental y Ansiedad
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El bucle de sobrepensar →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
       <Footer />
