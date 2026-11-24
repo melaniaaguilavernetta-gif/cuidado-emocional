@@ -85,6 +85,73 @@ export function ArticlePresionEstetica() {
               Reserva tu sesión hoy
             </button>
           </div>
+
+          <section
+            aria-labelledby="relacionados-estetica"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-estetica" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              La autoexigencia corporal y el escrutinio constante suelen estar ligados a tu voz interna, a cómo validas tus emociones o a qué desconexiones buscas. Estas lecturas pueden ayudarte:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/dialogo-interno"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Crecimiento Personal
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Reprogramar tu voz crítica →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/invalidacion-emocional"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Autoestima y Autoconocimiento
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El daño de ser "demasiado sensible" →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/adiccion-movil"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Hábitos y Bienestar
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    La anestesia de bolsillo: adicción al móvil →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/depresion-sonriente"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Bienestar y Emociones
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    El peso de la "depresión sonriente" →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
       <Footer />
