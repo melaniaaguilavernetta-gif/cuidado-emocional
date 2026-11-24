@@ -108,6 +108,73 @@ export function ArticleDepresionSonriente() {
               Reserva tu sesión hoy
             </button>
           </div>
+
+          <section
+            aria-labelledby="relacionados-depresion-sonriente"
+            className="mt-14 pt-10 border-t border-gray-200 not-prose"
+          >
+            <h2 id="relacionados-depresion-sonriente" className="text-2xl font-bold text-gray-900 mb-3">
+              Artículos relacionados para seguir profundizando
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Sostener una fachada de normalidad cuando por dentro hay cansancio o tristeza suele ir de la mano de estos temas:
+            </p>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <li>
+                <a
+                  href="/somatizacion"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Bienestar Físico y Emocional
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Entendiendo la somatización →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/insomnio"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Descanso y Bienestar
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Insomnio y ansiedad nocturna →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/dialogo-interno"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Crecimiento Personal
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Reprogramar tu voz crítica →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/adiccion-movil"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Hábitos y Bienestar
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    La anestesia de bolsillo: adicción al móvil →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
         </div>
       </main>
       <Footer />
