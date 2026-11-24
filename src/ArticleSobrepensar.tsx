@@ -130,4 +130,47 @@ export function ArticleSobrepensar() {
               <li>
                 <a
                   href="/insomnio"
-                  className="block p-4 rounded-xl bg-gray-
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Descanso
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Insomnio y ansiedad nocturna →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/adiccion-movil"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Hábitos y Bienestar
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    La anestesia de bolsillo: adicción al móvil →
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/falsos-limites"
+                  className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
+                >
+                  <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
+                    Relaciones
+                  </span>
+                  <span className="font-semibold text-gray-900">
+                    Límites sanos vs. evitación →
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </main>
+      <Footer />
+    </div>
+  );
+}
