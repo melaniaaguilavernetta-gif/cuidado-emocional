@@ -50,35 +50,35 @@ export function ArticleAnsiedad() {
           </h2>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            1. La respiración táctica o de "caja"
+1. La respiración táctica o de "caja"
           </h3>
           <p>
             Consiste en inhalar durante 4 segundos, aguantar 4 segundos, exhalar en 4 y mantener los pulmones vacíos otros 4. Repite este ciclo 5 veces para bajar la activación fisiológica cuando notes presión en el pecho o aceleración.
           </p>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            2. Descarga mental en dos columnas (TCC)
+2. Descarga mental en dos columnas (TCC)
           </h3>
           <p>
             Cuando el correo y las urgencias te saturan, anota en una columna lo que te preocupa y en la otra qué acción concreta depende de ti en los próximos 30 minutos. Separar hechos de suposiciones reduce el bloqueo.
           </p>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            3. Anclaje de calma antes de una reunión (PNL)
+3. Anclaje de calma antes de una reunión (PNL)
           </h3>
           <p>
             Haz una pausa de 10 segundos antes de entrar a una llamada o reunión tensa, apoya ambos pies en el suelo y asocia una postura erguida y tranquila con un momento previo en el que resolviste un reto con solvencia.
           </p>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            4. Poner límites realistas en los plazos
+4. Poner límites realistas en los plazos
           </h3>
           <p>
             La ansiedad laboral suele dispararse al aceptar todo como urgente. Reformular un <em>"no llego"</em> por una propuesta clara de prioridades y tiempos protege tu energía sin perder profesionalidad.
           </p>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            5. Corte ritualizado de la jornada
+5. Corte ritualizado de la jornada
           </h3>
           <p>
             Para no llevarte la oficina a casa o arruinarte el domingo, cierra pestañas, anota en tres líneas qué queda pendiente para mañana y haz una transición física breve (un paseo, cambiarte de ropa o desconectar notificaciones) que marque el fin del turno.
@@ -129,14 +129,14 @@ export function ArticleAnsiedad() {
               </li>
               <li>
                 <a
-                  href="/somatizacion"
+                  href="/cuando-ir-a-terapia"
                   className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
                 >
                   <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
-                    Bienestar Físico y Emocional
+                    Acompañamiento Emocional
                   </span>
                   <span className="font-semibold text-gray-900">
-                    Entendiendo la somatización →
+                    Cuándo ir a terapia: señales clave →
                   </span>
                 </a>
               </li>
