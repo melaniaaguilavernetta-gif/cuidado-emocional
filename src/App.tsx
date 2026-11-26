@@ -71,6 +71,9 @@ const ArticleCuandoIrATerapia = lazy(() =>
 const TerapiaGirona = lazy(() =>
   import('./TerapiaGirona').then((m) => ({ default: m.TerapiaGirona }))
 );
+const TerapiaOnline = lazy(() =>
+  import('./TerapiaOnline').then((m) => ({ default: m.TerapiaOnline }))
+);
 
 export default function App() {
   const path = window.location.pathname;
@@ -151,6 +154,8 @@ export default function App() {
         return <ArticleCuandoIrATerapia />;
       case '/terapia-girona':
         return <TerapiaGirona />;
+      case '/terapia-online':
+        return <TerapiaOnline />;
       default:
         return null;
     }
@@ -162,7 +167,7 @@ export default function App() {
       <Suspense
         fallback={
           <div className="min-h-screen flex items-center justify-center bg-white text-gray-700">
-            Cargando artículo...
+            Cargando contenido...
           </div>
         }
       >
@@ -188,12 +193,19 @@ export default function App() {
               <p className="text-xl text-gray-700 max-w-2xl mx-auto">
                 Artículos y herramientas clínicas de TCC y PNL para tu bienestar emocional, en Girona y online.
               </p>
-              <div className="mt-4">
+              <div className="mt-5 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a
                   href="/terapia-girona"
                   className="inline-block text-emerald-700 font-semibold hover:underline"
                 >
-                  Conoce nuestra terapia presencial en Girona (TCC y PNL) →
+                  Terapia presencial en Girona (TCC y PNL) →
+                </a>
+                <span className="hidden sm:inline text-gray-300">|</span>
+                <a
+                  href="/terapia-online"
+                  className="inline-block text-emerald-700 font-semibold hover:underline"
+                >
+                  Terapia Online en toda España →
                 </a>
               </div>
             </div>
