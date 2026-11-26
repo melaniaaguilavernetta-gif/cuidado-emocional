@@ -12,6 +12,7 @@ export function Contact() {
     phone: '',
     message: '',
   });
+  const [submittedNotice, setSubmittedNotice] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,6 +21,7 @@ export function Contact() {
       `Nombre: ${formData.name}\nEmail: ${formData.email}\nTeléfono: ${formData.phone}\n\nMensaje:\n${formData.message}`
     );
     window.location.href = `mailto:hola@cuidadoemocional.com?subject=${subject}&body=${body}`;
+    setSubmittedNotice(true);
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -39,7 +41,7 @@ export function Contact() {
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Reserva tu primera sesión y descubre cómo la combinación de TCC y PNL puede ayudarte
-            a vivir con más calma, claridad y confianza.
+            a vivir con más calma, claridad y confianza. Acompañamiento presencial en Girona y online.
           </p>
         </div>
 
@@ -108,12 +110,21 @@ export function Contact() {
                       placeholder="Cuéntame brevemente qué te trae por aquí..."
                       className="w-full min-h-32"
                     />
+                    <p className="text-xs text-gray-600 mt-2">
+                      Sin compromiso ni tecnicismos: con unas líneas basta para empezar.
+                    </p>
                   </div>
 
                   <Button type="submit" className="w-full bg-emerald-700 hover:bg-emerald-800 text-white font-semibold">
                     Enviar mensaje
                     <Send className="ml-2 w-4 h-4" aria-hidden="true" />
                   </Button>
+
+                  {submittedNotice && (
+                    <p className="text-sm text-emerald-900 bg-emerald-50 border border-emerald-200 rounded-lg p-3">
+                      Se ha preparado tu mensaje para <strong>hola@cuidadoemocional.com</strong>. Si no se abrió tu gestor de correo automáticamente, puedes enviarlo directamente a esa dirección o llamar al <strong>+34 696 68 22 77</strong>.
+                    </p>
+                  )}
                 </form>
               </CardContent>
             </Card>
@@ -158,8 +169,8 @@ export function Contact() {
                     <MapPin className="w-6 h-6 text-green-700" aria-hidden="true" />
                   </div>
                   <div>
-                    <div className="font-medium text-gray-900 mb-1">Ubicación</div>
-                    <p className="text-gray-700">Girona, España</p>
+                    <div className="font-medium text-gray-900 mb-1">Ubicación y modalidad</div>
+                    <p className="text-gray-700">Girona, España • Presencial y online</p>
                   </div>
                 </div>
               </div>
