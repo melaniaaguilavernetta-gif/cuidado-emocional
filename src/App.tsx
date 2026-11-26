@@ -68,6 +68,9 @@ const ArticleVivienda = lazy(() =>
 const ArticleCuandoIrATerapia = lazy(() =>
   import('./ArticleCuandoIrATerapia').then((m) => ({ default: m.ArticleCuandoIrATerapia }))
 );
+const TerapiaGirona = lazy(() =>
+  import('./TerapiaGirona').then((m) => ({ default: m.TerapiaGirona }))
+);
 
 export default function App() {
   const path = window.location.pathname;
@@ -105,7 +108,7 @@ export default function App() {
     }
   }, [path]);
 
-  // RUTAS DE ARTÍCULOS (CARGA DIFERIDA)
+  // RUTAS DE ARTÍCULOS Y PÁGINAS (CARGA DIFERIDA)
   const renderArticle = () => {
     switch (path) {
       case '/ansiedad-trabajo':
@@ -146,6 +149,8 @@ export default function App() {
         return <ArticleVivienda />;
       case '/cuando-ir-a-terapia':
         return <ArticleCuandoIrATerapia />;
+      case '/terapia-girona':
+        return <TerapiaGirona />;
       default:
         return null;
     }
@@ -183,6 +188,14 @@ export default function App() {
               <p className="text-xl text-gray-700 max-w-2xl mx-auto">
                 Artículos y herramientas clínicas de TCC y PNL para tu bienestar emocional, en Girona y online.
               </p>
+              <div className="mt-4">
+                <a
+                  href="/terapia-girona"
+                  className="inline-block text-emerald-700 font-semibold hover:underline"
+                >
+                  Conoce nuestra terapia presencial en Girona (TCC y PNL) →
+                </a>
+              </div>
             </div>
 
             <div className="max-w-3xl mx-auto space-y-6">
