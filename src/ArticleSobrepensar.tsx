@@ -64,14 +64,14 @@ export function ArticleSobrepensar() {
           </p>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            1. Detectar el pensamiento improductivo (TCC)
+1. Detectar el pensamiento improductivo (TCC)
           </h3>
           <p>
             Con la Terapia Cognitivo-Conductual aprendes a distinguir entre un problema real con pasos concretos y un bucle mental estéril. Identificar la trampa de buscar certeza absoluta te ayuda a poner un límite consciente al análisis.
           </p>
 
           <h3 className="text-2xl font-semibold text-emerald-800 mt-8 mb-3">
-            2. Cambiar el foco y regular el estado interno (PNL)
+2. Cambiar el foco y regular el estado interno (PNL)
           </h3>
           <p>
             A través de la Programación Neurolingüística (PNL) trabajamos para interrumpir el giro repetitivo de imágenes y diálogos internos que disparan la ansiedad, devolviendo el foco a acciones sencillas del presente.
@@ -142,14 +142,14 @@ export function ArticleSobrepensar() {
               </li>
               <li>
                 <a
-                  href="/adiccion-movil"
+                  href="/cuando-ir-a-terapia"
                   className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
                 >
                   <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
-                    Hábitos y Bienestar
+                    Acompañamiento Emocional
                   </span>
                   <span className="font-semibold text-gray-900">
-                    La anestesia de bolsillo: adicción al móvil →
+                    Cuándo ir a terapia: señales clave →
                   </span>
                 </a>
               </li>
