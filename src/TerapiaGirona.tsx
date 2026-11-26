@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import { MapPin, CheckCircle2, Clock, Sparkles, ArrowRight, Phone, Mail } from 'lucide-react';
-import { Button } from './button.tsx';
-import { Card, CardContent } from './card.tsx';
 
 export function TerapiaGirona() {
   useEffect(() => {
@@ -70,48 +68,45 @@ export function TerapiaGirona() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/#contacto">
-              <Button className="w-full sm:w-auto bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-6 text-base">
-                Solicitar primera sesión en Girona
-                <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-              </Button>
+            <a
+              href="/#contacto"
+              className="inline-flex items-center justify-center rounded-md bg-emerald-700 hover:bg-emerald-800 text-white font-semibold px-8 py-4 text-base transition-colors"
+            >
+              Solicitar primera sesión en Girona
+              <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
             </a>
-            <a href="tel:+34696682277">
-              <Button
-                variant="outline"
-                className="w-full sm:w-auto border-emerald-700 text-emerald-800 hover:bg-emerald-50 font-semibold px-8 py-6 text-base"
-              >
-                <Phone className="mr-2 w-4 h-4" aria-hidden="true" />
-                +34 696 68 22 77
-              </Button>
+            <a
+              href="tel:+34696682277"
+              className="inline-flex items-center justify-center rounded-md border border-emerald-700 text-emerald-800 hover:bg-emerald-50 font-semibold px-8 py-4 text-base transition-colors"
+            >
+              <Phone className="mr-2 w-4 h-4" aria-hidden="true" />
+              +34 696 68 22 77
             </a>
           </div>
         </header>
 
         {/* Bloque de áreas de acompañamiento */}
         <section className="mb-16">
-          <Card className="border-emerald-100 shadow-sm">
-            <CardContent className="p-8 md:p-10">
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                ¿En qué puedo acompañarte?
-              </h2>
-              <p className="text-gray-700 mb-6">
-                Cada proceso se adapta a tu ritmo y a tus objetivos concretos, abordando tanto el
-                malestar puntual como patrones que se repiten en el tiempo:
-              </p>
-              <div className="grid md:grid-cols-2 gap-4">
-                {temas.map((tema, index) => (
-                  <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2
-                      className="w-5 h-5 text-emerald-700 flex-shrink-0 mt-0.5"
-                      aria-hidden="true"
-                    />
-                    <span className="text-gray-800">{tema}</span>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
+          <div className="bg-white rounded-xl border border-emerald-100 shadow-sm p-8 md:p-10">
+            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+              ¿En qué puedo acompañarte?
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Cada proceso se adapta a tu ritmo y a tus objetivos concretos, abordando tanto el
+              malestar puntual como patrones que se repiten en el tiempo:
+            </p>
+            <div className="grid md:grid-cols-2 gap-4">
+              {temas.map((tema, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <CheckCircle2
+                    className="w-5 h-5 text-emerald-700 flex-shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  />
+                  <span className="text-gray-800">{tema}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* Cómo trabajamos paso a paso */}
@@ -120,50 +115,44 @@ export function TerapiaGirona() {
             Cómo trabajamos en Cuidado Emocional
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="border-teal-100">
-              <CardContent className="p-6">
-                <div className="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center mb-4">
-                  1
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Claridad desde el inicio
-                </h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Analizamos qué te preocupa hoy y definimos objetivos realistas sin juicios ni
-                  etiquetas innecesarias.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white rounded-xl border border-teal-100 shadow-sm p-6">
+              <div className="w-10 h-10 rounded-full bg-emerald-100 text-emerald-800 font-bold flex items-center justify-center mb-4">
+                1
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Claridad desde el inicio
+              </h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Analizamos qué te preocupa hoy y definimos objetivos realistas sin juicios ni
+                etiquetas innecesarias.
+              </p>
+            </div>
 
-            <Card className="border-teal-100">
-              <CardContent className="p-6">
-                <div className="w-10 h-10 rounded-full bg-teal-100 text-teal-800 font-bold flex items-center justify-center mb-4">
-                  2
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Herramientas de TCC y PNL
-                </h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Aplicamos técnicas prácticas para regular pensamientos repetitivos, emociones
-                  intensas y bloqueos en tu vida cotidiana.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white rounded-xl border border-teal-100 shadow-sm p-6">
+              <div className="w-10 h-10 rounded-full bg-teal-100 text-teal-800 font-bold flex items-center justify-center mb-4">
+                2
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Herramientas de TCC y PNL
+              </h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Aplicamos técnicas prácticas para regular pensamientos repetitivos, emociones
+                intensas y bloqueos en tu vida cotidiana.
+              </p>
+            </div>
 
-            <Card className="border-teal-100">
-              <CardContent className="p-6">
-                <div className="w-10 h-10 rounded-full bg-green-100 text-green-800 font-bold flex items-center justify-center mb-4">
-                  3
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                  Autonomía y seguimiento
-                </h3>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  El objetivo es que incorpores recursos propios para sentirte más segura/o y con
-                  mayor bienestar a medio y largo plazo.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="bg-white rounded-xl border border-teal-100 shadow-sm p-6">
+              <div className="w-10 h-10 rounded-full bg-green-100 text-green-800 font-bold flex items-center justify-center mb-4">
+                3
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Autonomía y seguimiento
+              </h3>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                El objetivo es que incorpores recursos propios para sentirte más segura/o y con
+                mayor bienestar a medio y largo plazo.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -178,12 +167,10 @@ export function TerapiaGirona() {
 
           <div className="space-y-4">
             {faqs.map((item, index) => (
-              <Card key={index} className="border-gray-200">
-                <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.pregunta}</h3>
-                  <p className="text-gray-700 leading-relaxed">{item.respuesta}</p>
-                </CardContent>
-              </Card>
+              <div key={index} className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.pregunta}</h3>
+                <p className="text-gray-700 leading-relaxed">{item.respuesta}</p>
+              </div>
             ))}
           </div>
         </section>
@@ -198,10 +185,11 @@ export function TerapiaGirona() {
             llámame sin compromiso para resolver cualquier duda.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="/#contacto">
-              <Button className="bg-white text-emerald-800 hover:bg-emerald-50 font-semibold px-6">
-                Ir al formulario de contacto
-              </Button>
+            <a
+              href="/#contacto"
+              className="inline-flex items-center justify-center rounded-md bg-white text-emerald-800 hover:bg-emerald-50 font-semibold px-6 py-3 transition-colors"
+            >
+              Ir al formulario de contacto
             </a>
             <a
               href="mailto:hola@cuidadoemocional.com"
