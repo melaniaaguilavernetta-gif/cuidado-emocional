@@ -136,7 +136,7 @@ export function ArticleCuandoIrATerapia() {
                     Gestión Mental y Ansiedad
                   </span>
                   <span className="font-semibold text-gray-900">
-                    El bucle de sobrepensar →
+                    Cómo dejar de sobrepensar →
                   </span>
                 </a>
               </li>
@@ -149,20 +149,20 @@ export function ArticleCuandoIrATerapia() {
                     Relaciones y Límites
                   </span>
                   <span className="font-semibold text-gray-900">
-                    Falsos límites vs. límites sanos →
+                    Límites sanos vs. evitación →
                   </span>
                 </a>
               </li>
               <li>
                 <a
-                  href="/autoestima-y-autocompasion"
+                  href="/dependencia"
                   className="block p-4 rounded-xl bg-gray-50 hover:bg-emerald-50 border border-gray-100 hover:border-emerald-200 transition-colors"
                 >
                   <span className="block text-xs font-semibold uppercase tracking-wide text-emerald-700 mb-1">
-                    Crecimiento Personal
+                    Relaciones y Vínculos
                   </span>
                   <span className="font-semibold text-gray-900">
-                    Autoestima y autocompasión en el día a día →
+                    Dependencia emocional →
                   </span>
                 </a>
               </li>
