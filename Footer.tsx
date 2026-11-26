@@ -6,13 +6,13 @@ export function Footer() {
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div className="md:col-span-2">
+          <div>
             <div className="flex items-center gap-3 mb-4">
               <Logo className="w-10 h-10" isScrolled={false} />
               <span className="text-2xl font-semibold">Cuidado Emocional</span>
             </div>
             <p className="text-gray-300 mb-6">
-              Acompañamiento emocional profesional para tu bienestar y transformación personal.
+              Acompañamiento emocional profesional presencial en Girona y online con TCC y PNL.
             </p>
             <div className="flex space-x-4">
               <a
@@ -52,6 +52,32 @@ export function Footer() {
                 <Twitter className="w-5 h-5" aria-hidden="true" />
               </a>
             </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Servicios</h3>
+            <ul className="space-y-2 text-gray-300">
+              <li>
+                <a href="/terapia-girona" className="hover:text-white transition-colors">
+                  Terapia presencial en Girona
+                </a>
+              </li>
+              <li>
+                <a href="/terapia-online" className="hover:text-white transition-colors">
+                  Terapia online (TCC y PNL)
+                </a>
+              </li>
+              <li>
+                <a href="/cuando-ir-a-terapia" className="hover:text-white transition-colors">
+                  Cuándo ir a terapia
+                </a>
+              </li>
+              <li>
+                <a href="/#contacto" className="hover:text-white transition-colors">
+                  Solicitar primera sesión
+                </a>
+              </li>
+            </ul>
           </div>
 
           <div>
