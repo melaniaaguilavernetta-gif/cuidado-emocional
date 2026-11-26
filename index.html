@@ -55,25 +55,41 @@
             "url": "https://www.cuidadoemocional.com/",
             "name": "Cuidado Emocional",
             "description": "Terapia presencial en Girona y terapia online con enfoque en Terapia Cognitivo-Conductual (TCC) y PNL.",
-            "inLanguage": "es"
+            "inLanguage": ["es", "ca"]
           },
           {
             "@type": "ProfessionalService",
             "@id": "https://www.cuidadoemocional.com/#service",
             "name": "Cuidado Emocional",
             "url": "https://www.cuidadoemocional.com/",
+            "telephone": "+34 696 68 22 77",
+            "email": "hola@cuidadoemocional.com",
             "description": "Acompañamiento terapéutico integral presencial en Girona y online con Terapia Cognitivo-Conductual (TCC) y PNL para ansiedad, crisis vitales, problemas de pareja, autoestima y dificultades emocionales.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Girona",
+              "addressRegion": "Girona",
+              "addressCountry": "ES"
+            },
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "20:00"
+              }
+            ],
             "areaServed": [
               {
                 "@type": "City",
                 "name": "Girona"
               },
               {
-                "@type": "Place",
-                "name": "Online"
+                "@type": "Country",
+                "name": "España"
               }
             ],
-            "availableLanguage": ["es"],
+            "availableLanguage": ["es", "ca"],
             "knowsAbout": [
               "Terapia Cognitivo-Conductual",
               "Programación Neurolingüística",
@@ -82,7 +98,29 @@
               "Dependencia emocional",
               "Somatización",
               "Terapia online"
-            ]
+            ],
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Modalidades de acompañamiento",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Terapia presencial en Girona (TCC y PNL)",
+                    "url": "https://www.cuidadoemocional.com/terapia-girona"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Terapia online con TCC y PNL",
+                    "url": "https://www.cuidadoemocional.com/terapia-online"
+                  }
+                }
+              ]
+            }
           }
         ]
       }
