@@ -84,22 +84,36 @@ export function ArticleCuandoIrATerapia() {
             No tienes que saber cómo explicarlo todo perfectamente. En las primeras sesiones exploramos qué te preocupa hoy, qué objetivos son realistas para ti y qué estrategias de TCC y PNL encajan mejor con tu ritmo, tanto de forma presencial en Girona como online.
           </p>
 
-          <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10">
+          <div className="bg-emerald-50 p-8 rounded-xl border-l-4 border-emerald-600 my-10 not-prose">
             <h2 className="text-2xl font-bold text-gray-900 mb-3">
               Da el primer paso hacia tu bienestar
             </h2>
             <p className="text-gray-700 mb-6">
               Si sientes que ha llegado el momento de ordenar lo que te pesa, en <strong>Cuidado Emocional</strong> (presencial en Girona y online) te acompaño paso a paso con herramientas prácticas de TCC y PNL.
             </p>
-            <button
-              onClick={() => {
-                sessionStorage.setItem('scrollToContact', 'true');
-                window.location.href = '/';
-              }}
-              className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
-            >
-              Reserva tu sesión hoy
-            </button>
+            <div className="flex flex-wrap gap-3 items-center">
+              <button
+                onClick={() => {
+                  sessionStorage.setItem('scrollToContact', 'true');
+                  window.location.href = '/';
+                }}
+                className="inline-block bg-emerald-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors cursor-pointer"
+              >
+                Reserva tu sesión hoy
+              </button>
+              <a
+                href="/terapia-girona"
+                className="inline-block bg-white text-emerald-800 border border-emerald-600 font-medium px-5 py-3 rounded-lg hover:bg-emerald-100 transition-colors"
+              >
+                Terapia en Girona →
+              </a>
+              <a
+                href="/terapia-online"
+                className="inline-block bg-white text-emerald-800 border border-emerald-600 font-medium px-5 py-3 rounded-lg hover:bg-emerald-100 transition-colors"
+              >
+                Terapia online →
+              </a>
+            </div>
           </div>
 
           <section
